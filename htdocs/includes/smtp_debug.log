@@ -1,0 +1,4185 @@
+2025-11-23 14:38:55 Level 1: SMTP ERROR: Failed to connect to server: Network is unreachable (101)
+2025-11-23 14:38:55 Level 2: SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2025-11-24 08:52:08 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-42cb7fa35b7sm28894572f8f.20 - gsmtp
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-24 08:52:08 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-24 08:52:08 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 08:52:08 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 08:52:08 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: MAIL FROM:<kiler1233pl@gmail.com>
+
+2025-11-24 08:52:08 Level 2: SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-42cb7fa35b7sm28894572f8f.20 - gsmtp
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: RCPT TO:<dzixitkontakt@gmail.com>
+
+2025-11-24 08:52:08 Level 2: SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-42cb7fa35b7sm28894572f8f.20 - gsmtp
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-24 08:52:08 Level 2: SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-42cb7fa35b7sm28894572f8f.20 - gsmtp
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: Date: Mon, 24 Nov 2025 08:52:08 -0500
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: To: dzixitkontakt@gmail.com
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: From: =?iso-8859-1?Q?Wypo=C5=BCyczalnia_Samochod=C3=B3w?= <kiler1233pl@gmail.com>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: Subject: =?iso-8859-1?Q?Weryfikacja_konta_-_Wypo=C5=BCyczalnia_Samochod=C3=B3w?=
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: Message-ID: <LrDSQ0hciylfTgC6IF2ho5xzQDE63Ixp6mJdjErGcE@carrentaluz.rf.gd>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:  boundary="b1=_LrDSQ0hciylfTgC6IF2ho5xzQDE63Ixp6mJdjErGcE"
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: --b1=_LrDSQ0hciylfTgC6IF2ho5xzQDE63Ixp6mJdjErGcE
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 Wypożyczalnia Samochodów
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 Witaj, dzixitkontakt@gmail.com!
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 Dziękujemy za rejestrację w naszej wypożyczalni samochodów.
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 Aby aktywować swoje konto, kliknij w poniższy link:
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                     Aktywuj konto
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 https://jakubtest976.atwebpages.com/verify.php?token=e27770e5245a99177fdc9cce18baf4d6474c66f58b72bb11c182239ed749432c
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 24 godziny.
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: --b1=_LrDSQ0hciylfTgC6IF2ho5xzQDE63Ixp6mJdjErGcE
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <h1>Wypożyczalnia Samochodów</h1>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <h2>Witaj, dzixitkontakt@gmail.com!</h2>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <p>Dziękujemy za rejestrację w naszej wypożyczalni samochodów.</p>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <p>Aby aktywować swoje konto, kliknij w poniższy link:</p>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                     <a href='https://jakubtest976.atwebpages.com/verify.php?token=e27770e5245a99177fdc9cce18baf4d6474c66f58b72bb11c182239ed749432c' class='button'>Aktywuj konto</a>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <div class='code'>https://jakubtest976.atwebpages.com/verify.php?token=e27770e5245a99177fdc9cce18baf4d6474c66f58b72bb11c182239ed749432c</div>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 24 godziny.</p>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.</strong></p>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: --b1=_LrDSQ0hciylfTgC6IF2ho5xzQDE63Ixp6mJdjErGcE--
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:52:08 Level 1: CLIENT -> SERVER: .
+
+2025-11-24 08:52:09 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1763992329 ffacd0b85a97d-42cb7fa35b7sm28894572f8f.20 - gsmtp
+
+2025-11-24 08:52:09 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-24 08:52:09 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-42cb7fa35b7sm28894572f8f.20 - gsmtp
+
+2025-11-24 08:53:47 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-477bf3b4eb2sm196263465e9.12 - gsmtp
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-24 08:53:47 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-24 08:53:47 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 08:53:47 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 08:53:47 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: MAIL FROM:<kiler1233pl@gmail.com>
+
+2025-11-24 08:53:47 Level 2: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-477bf3b4eb2sm196263465e9.12 - gsmtp
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: RCPT TO:<konradpajor73@gmail.com>
+
+2025-11-24 08:53:47 Level 2: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-477bf3b4eb2sm196263465e9.12 - gsmtp
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-24 08:53:47 Level 2: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-477bf3b4eb2sm196263465e9.12 - gsmtp
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: Date: Mon, 24 Nov 2025 08:53:46 -0500
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: To: konradpajor73@gmail.com
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: From: =?iso-8859-1?Q?Wypo=C5=BCyczalnia_Samochod=C3=B3w?= <kiler1233pl@gmail.com>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: Subject: =?iso-8859-1?Q?Weryfikacja_konta_-_Wypo=C5=BCyczalnia_Samochod=C3=B3w?=
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: Message-ID: <NIKSVcrd3s3gLH2x5GIQzwPzMVLhU6WRFcI62xJxrM@carrentaluz.rf.gd>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:  boundary="b1=_NIKSVcrd3s3gLH2x5GIQzwPzMVLhU6WRFcI62xJxrM"
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: --b1=_NIKSVcrd3s3gLH2x5GIQzwPzMVLhU6WRFcI62xJxrM
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 Wypożyczalnia Samochodów
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 Witaj, konradpajor73@gmail.com!
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 Dziękujemy za rejestrację w naszej wypożyczalni samochodów.
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 Aby aktywować swoje konto, kliknij w poniższy link:
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                     Aktywuj konto
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 https://jakubtest976.atwebpages.com/verify.php?token=e0da8ecba42b2109641f1d46965e9332d51e1e96aa27de1cf1aa05fe5a7b456f
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 24 godziny.
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: --b1=_NIKSVcrd3s3gLH2x5GIQzwPzMVLhU6WRFcI62xJxrM
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <h1>Wypożyczalnia Samochodów</h1>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <h2>Witaj, konradpajor73@gmail.com!</h2>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <p>Dziękujemy za rejestrację w naszej wypożyczalni samochodów.</p>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <p>Aby aktywować swoje konto, kliknij w poniższy link:</p>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                     <a href='https://jakubtest976.atwebpages.com/verify.php?token=e0da8ecba42b2109641f1d46965e9332d51e1e96aa27de1cf1aa05fe5a7b456f' class='button'>Aktywuj konto</a>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <div class='code'>https://jakubtest976.atwebpages.com/verify.php?token=e0da8ecba42b2109641f1d46965e9332d51e1e96aa27de1cf1aa05fe5a7b456f</div>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 24 godziny.</p>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.</strong></p>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: --b1=_NIKSVcrd3s3gLH2x5GIQzwPzMVLhU6WRFcI62xJxrM--
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: .
+
+2025-11-24 08:53:47 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1763992427 5b1f17b1804b1-477bf3b4eb2sm196263465e9.12 - gsmtp
+
+2025-11-24 08:53:47 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-24 08:53:47 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-477bf3b4eb2sm196263465e9.12 - gsmtp
+
+2025-11-24 09:01:25 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-42cb7f2e454sm28595658f8f.2 - gsmtp
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-24 09:01:25 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-24 09:01:25 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:01:25 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:01:25 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: MAIL FROM:<kiler1233pl@gmail.com>
+
+2025-11-24 09:01:25 Level 2: SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-42cb7f2e454sm28595658f8f.2 - gsmtp
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: RCPT TO:<konradpajor73@gmail.com>
+
+2025-11-24 09:01:25 Level 2: SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-42cb7f2e454sm28595658f8f.2 - gsmtp
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-24 09:01:25 Level 2: SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-42cb7f2e454sm28595658f8f.2 - gsmtp
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: Date: Mon, 24 Nov 2025 09:01:25 -0500
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: To: konradpajor73@gmail.com
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: From: =?iso-8859-1?Q?Wypo=C5=BCyczalnia_Samochod=C3=B3w?= <kiler1233pl@gmail.com>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: Subject: =?iso-8859-1?Q?Resetowanie_has=C5=82a_-_Wypo=C5=BCyczalnia_Samochod=C3=B3w?=
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: Message-ID: <j4zMx7FJDWLShj5YobqlKhTy11Whe1Dwx9C8NczaY@carrentaluz.rf.gd>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:  boundary="b1=_j4zMx7FJDWLShj5YobqlKhTy11Whe1Dwx9C8NczaY"
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: --b1=_j4zMx7FJDWLShj5YobqlKhTy11Whe1Dwx9C8NczaY
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 Resetowanie hasła
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 Witaj, konradpajor73@gmail.com!
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 Aby zresetować hasło, kliknij w poniższy link:
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                     Resetuj hasło
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gdreset_password.php?token=728d493f3e439de2c1d52f3df43f8d5be776ee983e6c1fd75489174c880722b3
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 1 godzinę.
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: --b1=_j4zMx7FJDWLShj5YobqlKhTy11Whe1Dwx9C8NczaY
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <h1>Resetowanie hasła</h1>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <h2>Witaj, konradpajor73@gmail.com!</h2>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <p>Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.</p>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <p>Aby zresetować hasło, kliknij w poniższy link:</p>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gdreset_password.php?token=728d493f3e439de2c1d52f3df43f8d5be776ee983e6c1fd75489174c880722b3' class='button'>Resetuj hasło</a>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gdreset_password.php?token=728d493f3e439de2c1d52f3df43f8d5be776ee983e6c1fd75489174c880722b3</div>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 1 godzinę.</p>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.</strong></p>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: --b1=_j4zMx7FJDWLShj5YobqlKhTy11Whe1Dwx9C8NczaY--
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: .
+
+2025-11-24 09:01:25 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1763992885 ffacd0b85a97d-42cb7f2e454sm28595658f8f.2 - gsmtp
+
+2025-11-24 09:01:25 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-24 09:01:25 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-42cb7f2e454sm28595658f8f.2 - gsmtp
+
+2025-11-24 09:02:22 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-477bf3b4fafsm201199965e9.14 - gsmtp
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-24 09:02:22 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-24 09:02:22 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:02:22 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:02:22 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: MAIL FROM:<kiler1233pl@gmail.com>
+
+2025-11-24 09:02:22 Level 2: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-477bf3b4fafsm201199965e9.14 - gsmtp
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: RCPT TO:<konradpajor73@gmail.com>
+
+2025-11-24 09:02:22 Level 2: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-477bf3b4fafsm201199965e9.14 - gsmtp
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-24 09:02:22 Level 2: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-477bf3b4fafsm201199965e9.14 - gsmtp
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: Date: Mon, 24 Nov 2025 09:02:22 -0500
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: To: konradpajor73@gmail.com
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: From: =?iso-8859-1?Q?Wypo=C5=BCyczalnia_Samochod=C3=B3w?= <kiler1233pl@gmail.com>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: Subject: =?iso-8859-1?Q?Resetowanie_has=C5=82a_-_Wypo=C5=BCyczalnia_Samochod=C3=B3w?=
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: Message-ID: <6GjShEBHQHxCuPaHJrE8fPtytNpcLPrhwFWEYmAc@carrentaluz.rf.gd>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:  boundary="b1=_6GjShEBHQHxCuPaHJrE8fPtytNpcLPrhwFWEYmAc"
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: --b1=_6GjShEBHQHxCuPaHJrE8fPtytNpcLPrhwFWEYmAc
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 Resetowanie hasła
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 Witaj, konradpajor73@gmail.com!
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 Aby zresetować hasło, kliknij w poniższy link:
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                     Resetuj hasło
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/reset_password.php?token=ef3abaceb0b8860c15068457827b8f86b69599d5bb3f7ff55ff17ff8c5c9155a
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 1 godzinę.
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: --b1=_6GjShEBHQHxCuPaHJrE8fPtytNpcLPrhwFWEYmAc
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <h1>Resetowanie hasła</h1>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <h2>Witaj, konradpajor73@gmail.com!</h2>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <p>Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.</p>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <p>Aby zresetować hasło, kliknij w poniższy link:</p>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/reset_password.php?token=ef3abaceb0b8860c15068457827b8f86b69599d5bb3f7ff55ff17ff8c5c9155a' class='button'>Resetuj hasło</a>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/reset_password.php?token=ef3abaceb0b8860c15068457827b8f86b69599d5bb3f7ff55ff17ff8c5c9155a</div>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 1 godzinę.</p>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.</strong></p>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: --b1=_6GjShEBHQHxCuPaHJrE8fPtytNpcLPrhwFWEYmAc--
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:02:22 Level 1: CLIENT -> SERVER: .
+
+2025-11-24 09:02:23 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1763992943 5b1f17b1804b1-477bf3b4fafsm201199965e9.14 - gsmtp
+
+2025-11-24 09:02:23 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-24 09:02:23 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-477bf3b4fafsm201199965e9.14 - gsmtp
+
+2025-11-24 09:03:25 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-477bf1f3e63sm202256125e9.7 - gsmtp
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-24 09:03:25 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-24 09:03:25 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:03:25 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:03:25 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: MAIL FROM:<kiler1233pl@gmail.com>
+
+2025-11-24 09:03:25 Level 2: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-477bf1f3e63sm202256125e9.7 - gsmtp
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: RCPT TO:<dzixitkontakt@gmail.com>
+
+2025-11-24 09:03:25 Level 2: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-477bf1f3e63sm202256125e9.7 - gsmtp
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-24 09:03:25 Level 2: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-477bf1f3e63sm202256125e9.7 - gsmtp
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: Date: Mon, 24 Nov 2025 09:03:25 -0500
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: To: dzixitkontakt@gmail.com
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: From: =?iso-8859-1?Q?Wypo=C5=BCyczalnia_Samochod=C3=B3w?= <kiler1233pl@gmail.com>
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: Subject: =?iso-8859-1?Q?Weryfikacja_konta_-_Wypo=C5=BCyczalnia_Samochod=C3=B3w?=
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: Message-ID: <rliJo4MjAgXAxkOLYFNRwlebuBkmONx17ddnsAJLoU@carrentaluz.rf.gd>
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:  boundary="b1=_rliJo4MjAgXAxkOLYFNRwlebuBkmONx17ddnsAJLoU"
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: --b1=_rliJo4MjAgXAxkOLYFNRwlebuBkmONx17ddnsAJLoU
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:03:25 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 Wypożyczalnia Samochodów
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 Witaj, dzixitkontakt@gmail.com!
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 Dziękujemy za rejestrację w naszej wypożyczalni samochodów.
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 Aby aktywować swoje konto, kliknij w poniższy link:
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                     Aktywuj konto
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/verify.php?token=491d060db4b3e15a054abf61c4521c40093ae19bc025f7a6fd5ef894f2f56f7c
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 24 godziny.
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: --b1=_rliJo4MjAgXAxkOLYFNRwlebuBkmONx17ddnsAJLoU
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <h1>Wypożyczalnia Samochodów</h1>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <h2>Witaj, dzixitkontakt@gmail.com!</h2>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <p>Dziękujemy za rejestrację w naszej wypożyczalni samochodów.</p>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <p>Aby aktywować swoje konto, kliknij w poniższy link:</p>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/verify.php?token=491d060db4b3e15a054abf61c4521c40093ae19bc025f7a6fd5ef894f2f56f7c' class='button'>Aktywuj konto</a>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/verify.php?token=491d060db4b3e15a054abf61c4521c40093ae19bc025f7a6fd5ef894f2f56f7c</div>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 24 godziny.</p>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.</strong></p>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: --b1=_rliJo4MjAgXAxkOLYFNRwlebuBkmONx17ddnsAJLoU--
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: .
+
+2025-11-24 09:03:26 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1763993006 5b1f17b1804b1-477bf1f3e63sm202256125e9.7 - gsmtp
+
+2025-11-24 09:03:26 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-24 09:03:26 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-477bf1f3e63sm202256125e9.7 - gsmtp
+
+2025-11-24 09:24:22 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-477a9deeb96sm154750665e9.4 - gsmtp
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-24 09:24:22 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-24 09:24:22 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:24:22 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:24:22 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-11-24 09:24:22 Level 2: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-477a9deeb96sm154750665e9.4 - gsmtp
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: RCPT TO:<konradpajor73@gmail.com>
+
+2025-11-24 09:24:22 Level 2: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-477a9deeb96sm154750665e9.4 - gsmtp
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-24 09:24:22 Level 2: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-477a9deeb96sm154750665e9.4 - gsmtp
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: Date: Mon, 24 Nov 2025 09:24:22 -0500
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: To: konradpajor73@gmail.com
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: From: =?iso-8859-1?Q?Wypo=C5=BCyczalnia_Samochod=C3=B3w?= <konradprojektowyuz@gmail.com>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: Subject: Weryfikacja konta - Wypozyczalnia Samochodow
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: Message-ID: <f7ypEIcQgxsART8LaTFD6ilprAgNWio55l2eKSIJbc@carrentaluz.rf.gd>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:  boundary="b1=_f7ypEIcQgxsART8LaTFD6ilprAgNWio55l2eKSIJbc"
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: --b1=_f7ypEIcQgxsART8LaTFD6ilprAgNWio55l2eKSIJbc
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 Wypożyczalnia Samochodów
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 Witaj, konradpajor73@gmail.com!
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 Dziękujemy za rejestrację w naszej wypożyczalni samochodów.
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 Aby aktywować swoje konto, kliknij w poniższy link:
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                     Aktywuj konto
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/verify.php?token=5847a5ac4b3a8ef4d2f3329e7dae1f5cbeecce27191e2ffc9b4713100967f37f
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 24 godziny.
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: --b1=_f7ypEIcQgxsART8LaTFD6ilprAgNWio55l2eKSIJbc
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <h1>Wypożyczalnia Samochodów</h1>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <h2>Witaj, konradpajor73@gmail.com!</h2>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <p>Dziękujemy za rejestrację w naszej wypożyczalni samochodów.</p>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <p>Aby aktywować swoje konto, kliknij w poniższy link:</p>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/verify.php?token=5847a5ac4b3a8ef4d2f3329e7dae1f5cbeecce27191e2ffc9b4713100967f37f' class='button'>Aktywuj konto</a>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/verify.php?token=5847a5ac4b3a8ef4d2f3329e7dae1f5cbeecce27191e2ffc9b4713100967f37f</div>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 24 godziny.</p>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.</strong></p>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: --b1=_f7ypEIcQgxsART8LaTFD6ilprAgNWio55l2eKSIJbc--
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: .
+
+2025-11-24 09:24:22 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1763994262 5b1f17b1804b1-477a9deeb96sm154750665e9.4 - gsmtp
+
+2025-11-24 09:24:22 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-24 09:24:22 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-477a9deeb96sm154750665e9.4 - gsmtp
+
+2025-11-24 09:25:56 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-42cb7fa7affsm28829414f8f.23 - gsmtp
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-24 09:25:56 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-24 09:25:56 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:25:56 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:25:56 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-11-24 09:25:56 Level 2: SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-42cb7fa7affsm28829414f8f.23 - gsmtp
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: RCPT TO:<konradpajor73@gmail.com>
+
+2025-11-24 09:25:56 Level 2: SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-42cb7fa7affsm28829414f8f.23 - gsmtp
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-24 09:25:56 Level 2: SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-42cb7fa7affsm28829414f8f.23 - gsmtp
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: Date: Mon, 24 Nov 2025 09:25:56 -0500
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: To: konradpajor73@gmail.com
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: From: =?iso-8859-1?Q?Wypo=C5=BCyczalnia_Samochod=C3=B3w?= <konradprojektowyuz@gmail.com>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: Subject: =?iso-8859-1?Q?Resetowanie_has=C5=82a_-_Wypozyczalnia_Samochodow?=
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: Message-ID: <IAeEUGPTeS8NWqiCV1MF6pUmL3fN8VC0eQ3GLHukxA@carrentaluz.rf.gd>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:  boundary="b1=_IAeEUGPTeS8NWqiCV1MF6pUmL3fN8VC0eQ3GLHukxA"
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: --b1=_IAeEUGPTeS8NWqiCV1MF6pUmL3fN8VC0eQ3GLHukxA
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 Resetowanie hasla
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 Witaj, konradpajor73@gmail.com!
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 Aby zresetować hasło, kliknij w poniższy link:
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                     Resetuj hasło
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/reset_password.php?token=6759015e2df241ea3c6aa5dc10a2c4a38396287d34d8d94290aaedb67756d04f
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 1 godzinę.
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: --b1=_IAeEUGPTeS8NWqiCV1MF6pUmL3fN8VC0eQ3GLHukxA
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <h1>Resetowanie hasla</h1>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <h2>Witaj, konradpajor73@gmail.com!</h2>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <p>Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.</p>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <p>Aby zresetować hasło, kliknij w poniższy link:</p>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/reset_password.php?token=6759015e2df241ea3c6aa5dc10a2c4a38396287d34d8d94290aaedb67756d04f' class='button'>Resetuj hasło</a>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/reset_password.php?token=6759015e2df241ea3c6aa5dc10a2c4a38396287d34d8d94290aaedb67756d04f</div>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 1 godzinę.</p>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.</strong></p>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: --b1=_IAeEUGPTeS8NWqiCV1MF6pUmL3fN8VC0eQ3GLHukxA--
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: .
+
+2025-11-24 09:25:56 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1763994356 ffacd0b85a97d-42cb7fa7affsm28829414f8f.23 - gsmtp
+
+2025-11-24 09:25:56 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-24 09:25:56 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-42cb7fa7affsm28829414f8f.23 - gsmtp
+
+2025-11-24 09:27:18 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-477a9de46cdsm147557075e9.8 - gsmtp
+
+2025-11-24 09:27:18 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-24 09:27:18 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-24 09:27:18 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-24 09:27:18 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-24 09:27:18 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:27:18 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-24 09:27:18 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:27:19 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-11-24 09:27:19 Level 2: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-477a9de46cdsm147557075e9.8 - gsmtp
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: RCPT TO:<konradpajor73@gmail.com>
+
+2025-11-24 09:27:19 Level 2: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-477a9de46cdsm147557075e9.8 - gsmtp
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-24 09:27:19 Level 2: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-477a9de46cdsm147557075e9.8 - gsmtp
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: Date: Mon, 24 Nov 2025 09:27:18 -0500
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: To: konradpajor73@gmail.com
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: From: =?iso-8859-1?Q?Wypo=C5=BCyczalnia_Samochod=C3=B3w?= <konradprojektowyuz@gmail.com>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: Subject: Resetowanie hasla - Wypozyczalnia Samochodow
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: Message-ID: <qIkYlCzTLvbGip48jz4SL1bOsQ1O4pTVuM6aZYCzos@carrentaluz.rf.gd>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:  boundary="b1=_qIkYlCzTLvbGip48jz4SL1bOsQ1O4pTVuM6aZYCzos"
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: --b1=_qIkYlCzTLvbGip48jz4SL1bOsQ1O4pTVuM6aZYCzos
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 Resetowanie hasla
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 Witaj, konradpajor73@gmail.com!
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 Aby zresetować hasło, kliknij w poniższy link:
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                     Resetuj hasło
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/reset_password.php?token=e883746495fbb3930cc9f6bc3232600b6b05172988f097673575892a28c3e6c9
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 1 godzinę.
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: --b1=_qIkYlCzTLvbGip48jz4SL1bOsQ1O4pTVuM6aZYCzos
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <h1>Resetowanie hasla</h1>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <h2>Witaj, konradpajor73@gmail.com!</h2>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <p>Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.</p>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <p>Aby zresetować hasło, kliknij w poniższy link:</p>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/reset_password.php?token=e883746495fbb3930cc9f6bc3232600b6b05172988f097673575892a28c3e6c9' class='button'>Resetuj hasło</a>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/reset_password.php?token=e883746495fbb3930cc9f6bc3232600b6b05172988f097673575892a28c3e6c9</div>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 1 godzinę.</p>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.</strong></p>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: --b1=_qIkYlCzTLvbGip48jz4SL1bOsQ1O4pTVuM6aZYCzos--
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: .
+
+2025-11-24 09:27:19 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1763994439 5b1f17b1804b1-477a9de46cdsm147557075e9.8 - gsmtp
+
+2025-11-24 09:27:19 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-24 09:27:19 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-477a9de46cdsm147557075e9.8 - gsmtp
+
+2025-11-24 09:28:51 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-477bf198a67sm208924305e9.0 - gsmtp
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-24 09:28:51 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-24 09:28:51 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:28:51 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:28:51 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-11-24 09:28:51 Level 2: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-477bf198a67sm208924305e9.0 - gsmtp
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: RCPT TO:<konradpajor73@gmail.com>
+
+2025-11-24 09:28:51 Level 2: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-477bf198a67sm208924305e9.0 - gsmtp
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-24 09:28:51 Level 2: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-477bf198a67sm208924305e9.0 - gsmtp
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: Date: Mon, 24 Nov 2025 09:28:51 -0500
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: To: konradpajor73@gmail.com
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: From: Wypozyczalnia Samochodow <konradprojektowyuz@gmail.com>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: Subject: Resetowanie hasla - Wypozyczalnia Samochodow
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: Message-ID: <4LdyEjH97Dbq7wonKWy35FJ6k86G1rVDzKBXUYjQ7sU@carrentaluz.rf.gd>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:  boundary="b1=_4LdyEjH97Dbq7wonKWy35FJ6k86G1rVDzKBXUYjQ7sU"
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: --b1=_4LdyEjH97Dbq7wonKWy35FJ6k86G1rVDzKBXUYjQ7sU
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 Resetowanie hasla
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 Witaj, konradpajor73@gmail.com!
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 Aby zresetować hasło, kliknij w poniższy link:
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                     Resetuj hasło
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/reset_password.php?token=4cf38db84e17749c1ba0e4fa9687c17f600aaa555372e21f085078ee4a01dfa0
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 1 godzinę.
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: --b1=_4LdyEjH97Dbq7wonKWy35FJ6k86G1rVDzKBXUYjQ7sU
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <h1>Resetowanie hasla</h1>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <h2>Witaj, konradpajor73@gmail.com!</h2>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <p>Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.</p>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <p>Aby zresetować hasło, kliknij w poniższy link:</p>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/reset_password.php?token=4cf38db84e17749c1ba0e4fa9687c17f600aaa555372e21f085078ee4a01dfa0' class='button'>Resetuj hasło</a>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/reset_password.php?token=4cf38db84e17749c1ba0e4fa9687c17f600aaa555372e21f085078ee4a01dfa0</div>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 1 godzinę.</p>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.</strong></p>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: --b1=_4LdyEjH97Dbq7wonKWy35FJ6k86G1rVDzKBXUYjQ7sU--
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:28:51 Level 1: CLIENT -> SERVER: .
+
+2025-11-24 09:28:52 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1763994532 5b1f17b1804b1-477bf198a67sm208924305e9.0 - gsmtp
+
+2025-11-24 09:28:52 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-24 09:28:52 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-477bf198a67sm208924305e9.0 - gsmtp
+
+2025-11-24 09:32:27 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-42cb7f34ff3sm29417322f8f.16 - gsmtp
+
+2025-11-24 09:32:27 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-24 09:32:27 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-24 09:32:27 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-24 09:32:27 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-24 09:32:27 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:32:27 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-24 09:32:27 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-24 09:32:28 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-11-24 09:32:28 Level 2: SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-42cb7f34ff3sm29417322f8f.16 - gsmtp
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: RCPT TO:<konradpajor73@gmail.com>
+
+2025-11-24 09:32:28 Level 2: SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-42cb7f34ff3sm29417322f8f.16 - gsmtp
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-24 09:32:28 Level 2: SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-42cb7f34ff3sm29417322f8f.16 - gsmtp
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: Date: Mon, 24 Nov 2025 09:32:27 -0500
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: To: konradpajor73@gmail.com
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: From: Wypozyczalnia Samochodow <konradprojektowyuz@gmail.com>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: Subject: Resetowanie hasla - Wypozyczalnia Samochodow
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: Message-ID: <Ktn2bLTOOIXidzKrvFsX71yjb7AjlIl3gIrtvZz82I@carrentaluz.rf.gd>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:  boundary="b1=_Ktn2bLTOOIXidzKrvFsX71yjb7AjlIl3gIrtvZz82I"
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: --b1=_Ktn2bLTOOIXidzKrvFsX71yjb7AjlIl3gIrtvZz82I
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 Resetowanie hasla
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 Witaj, konradpajor73@gmail.com!
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 Aby zresetować hasło, kliknij w poniższy link:
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                     Resetuj hasło
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/reset_password.php?token=12cfcbbb1544a7c26206503871d512a908423c5007b8de34f8ed7c088f1b578a
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 1 godzinę.
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:         
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: --b1=_Ktn2bLTOOIXidzKrvFsX71yjb7AjlIl3gIrtvZz82I
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <h1>Resetowanie hasla</h1>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <h2>Witaj, konradpajor73@gmail.com!</h2>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <p>Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.</p>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <p>Aby zresetować hasło, kliknij w poniższy link:</p>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/reset_password.php?token=12cfcbbb1544a7c26206503871d512a908423c5007b8de34f8ed7c088f1b578a' class='button'>Resetuj hasło</a>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/reset_password.php?token=12cfcbbb1544a7c26206503871d512a908423c5007b8de34f8ed7c088f1b578a</div>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 1 godzinę.</p>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.</strong></p>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER:     
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: --b1=_Ktn2bLTOOIXidzKrvFsX71yjb7AjlIl3gIrtvZz82I--
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: 
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: .
+
+2025-11-24 09:32:28 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1763994748 ffacd0b85a97d-42cb7f34ff3sm29417322f8f.16 - gsmtp
+
+2025-11-24 09:32:28 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-24 09:32:28 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-42cb7f34ff3sm29417322f8f.16 - gsmtp
+
+2025-11-26 12:18:44 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4790adc8bbbsm57552185e9.3 - gsmtp
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-26 12:18:44 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-26 12:18:44 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-26 12:18:44 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-26 12:18:44 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-11-26 12:18:44 Level 2: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-4790adc8bbbsm57552185e9.3 - gsmtp
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: RCPT TO:<dzixitkontakt@gmail.com>
+
+2025-11-26 12:18:44 Level 2: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-4790adc8bbbsm57552185e9.3 - gsmtp
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-26 12:18:44 Level 2: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-4790adc8bbbsm57552185e9.3 - gsmtp
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: Date: Wed, 26 Nov 2025 12:18:44 -0500
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: To: dzixitkontakt@gmail.com
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: From: Wypozyczalnia Samochodow <konradprojektowyuz@gmail.com>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: Subject: Weryfikacja konta - Wypozyczalnia Samochodow
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: Message-ID: <yujG6NAqRFWhcnPAqI6FKTR3NwAc1iiRzZFr70hik@carrentaluz.rf.gd>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:  boundary="b1=_yujG6NAqRFWhcnPAqI6FKTR3NwAc1iiRzZFr70hik"
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: --b1=_yujG6NAqRFWhcnPAqI6FKTR3NwAc1iiRzZFr70hik
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 Wypozyczalnia Samochodow
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 Witaj, dzixitkontakt@gmail.com!
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 Dziękujemy za rejestrację w naszej wypożyczalni samochodów.
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 Aby aktywować swoje konto, kliknij w poniższy link:
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                     Aktywuj konto
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/verify.php?token=aeb0b21f51309271d4836a37f30b8d9f69668918ab34be18fe39fd660980cb8f
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 24 godziny.
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: --b1=_yujG6NAqRFWhcnPAqI6FKTR3NwAc1iiRzZFr70hik
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <h1>Wypozyczalnia Samochodow</h1>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <h2>Witaj, dzixitkontakt@gmail.com!</h2>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <p>Dziękujemy za rejestrację w naszej wypożyczalni samochodów.</p>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <p>Aby aktywować swoje konto, kliknij w poniższy link:</p>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/verify.php?token=aeb0b21f51309271d4836a37f30b8d9f69668918ab34be18fe39fd660980cb8f' class='button'>Aktywuj konto</a>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/verify.php?token=aeb0b21f51309271d4836a37f30b8d9f69668918ab34be18fe39fd660980cb8f</div>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 24 godziny.</p>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.</strong></p>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: --b1=_yujG6NAqRFWhcnPAqI6FKTR3NwAc1iiRzZFr70hik--
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:18:44 Level 1: CLIENT -> SERVER: .
+
+2025-11-26 12:18:45 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1764177525 5b1f17b1804b1-4790adc8bbbsm57552185e9.3 - gsmtp
+
+2025-11-26 12:18:45 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-26 12:18:45 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-4790adc8bbbsm57552185e9.3 - gsmtp
+
+2025-11-26 12:32:54 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4790adfd181sm55644245e9.14 - gsmtp
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-26 12:32:54 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-26 12:32:54 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-26 12:32:54 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-26 12:32:54 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-11-26 12:32:54 Level 2: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-4790adfd181sm55644245e9.14 - gsmtp
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: RCPT TO:<dzixitkontakt@gmail.com>
+
+2025-11-26 12:32:54 Level 2: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-4790adfd181sm55644245e9.14 - gsmtp
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-26 12:32:54 Level 2: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-4790adfd181sm55644245e9.14 - gsmtp
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: Date: Wed, 26 Nov 2025 12:32:54 -0500
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: To: dzixitkontakt@gmail.com
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: From: Wypozyczalnia Samochodow <konradprojektowyuz@gmail.com>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: Subject: Weryfikacja konta - Wypozyczalnia Samochodow
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: Message-ID: <oYNQB1OiQJ1PBF911aGHIOQdp6abTmQCDO0eWFRWY@carrentaluz.rf.gd>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:  boundary="b1=_oYNQB1OiQJ1PBF911aGHIOQdp6abTmQCDO0eWFRWY"
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: --b1=_oYNQB1OiQJ1PBF911aGHIOQdp6abTmQCDO0eWFRWY
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 Wypozyczalnia Samochodow
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 Witaj, dzixitkontakt@gmail.com!
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 Dziękujemy za rejestrację w naszej wypożyczalni samochodów.
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 Aby aktywować swoje konto, kliknij w poniższy link:
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                     Aktywuj konto
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/verify.php?token=b80476cb21e9e1d457bbad79d46472f34eab8ed89ce255f0e0505d6daa647b03
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 24 godziny.
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: --b1=_oYNQB1OiQJ1PBF911aGHIOQdp6abTmQCDO0eWFRWY
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <h1>Wypozyczalnia Samochodow</h1>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <h2>Witaj, dzixitkontakt@gmail.com!</h2>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <p>Dziękujemy za rejestrację w naszej wypożyczalni samochodów.</p>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <p>Aby aktywować swoje konto, kliknij w poniższy link:</p>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/verify.php?token=b80476cb21e9e1d457bbad79d46472f34eab8ed89ce255f0e0505d6daa647b03' class='button'>Aktywuj konto</a>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/verify.php?token=b80476cb21e9e1d457bbad79d46472f34eab8ed89ce255f0e0505d6daa647b03</div>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 24 godziny.</p>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.</strong></p>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: --b1=_oYNQB1OiQJ1PBF911aGHIOQdp6abTmQCDO0eWFRWY--
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:32:54 Level 1: CLIENT -> SERVER: .
+
+2025-11-26 12:32:55 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1764178375 5b1f17b1804b1-4790adfd181sm55644245e9.14 - gsmtp
+
+2025-11-26 12:32:55 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-26 12:32:55 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-4790adfd181sm55644245e9.14 - gsmtp
+
+2025-11-26 12:44:32 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-42cc231dc6esm32328489f8f.7 - gsmtp
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-26 12:44:32 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-26 12:44:32 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-26 12:44:32 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-26 12:44:32 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-11-26 12:44:32 Level 2: SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-42cc231dc6esm32328489f8f.7 - gsmtp
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: RCPT TO:<dzixitkontakt@gmail.com>
+
+2025-11-26 12:44:32 Level 2: SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-42cc231dc6esm32328489f8f.7 - gsmtp
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-26 12:44:32 Level 2: SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-42cc231dc6esm32328489f8f.7 - gsmtp
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: Date: Wed, 26 Nov 2025 12:44:32 -0500
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: To: dzixitkontakt@gmail.com
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: From: Wypozyczalnia Samochodow <konradprojektowyuz@gmail.com>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: Subject: Weryfikacja konta - Wypozyczalnia Samochodow
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: Message-ID: <VpwPRTtWkBsxwqSnCMJhXZj1Oucxp4Ax9fo3mBHWZg@carrentaluz.rf.gd>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:  boundary="b1=_VpwPRTtWkBsxwqSnCMJhXZj1Oucxp4Ax9fo3mBHWZg"
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: --b1=_VpwPRTtWkBsxwqSnCMJhXZj1Oucxp4Ax9fo3mBHWZg
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 Wypozyczalnia Samochodow
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 Witaj, dzixitkontakt@gmail.com!
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 Dziękujemy za rejestrację w naszej wypożyczalni samochodów.
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 Aby aktywować swoje konto, kliknij w poniższy link:
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                     Aktywuj konto
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/verify.php?token=f01acad45be5a7958b2e3500823b6dd2891e4e6f9f2e42332c7902351a70252a
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 Link jest ważny przez 24 godziny.
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:         
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: --b1=_VpwPRTtWkBsxwqSnCMJhXZj1Oucxp4Ax9fo3mBHWZg
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <h1>Wypozyczalnia Samochodow</h1>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <h2>Witaj, dzixitkontakt@gmail.com!</h2>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <p>Dziękujemy za rejestrację w naszej wypożyczalni samochodów.</p>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <p>Aby aktywować swoje konto, kliknij w poniższy link:</p>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/verify.php?token=f01acad45be5a7958b2e3500823b6dd2891e4e6f9f2e42332c7902351a70252a' class='button'>Aktywuj konto</a>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/verify.php?token=f01acad45be5a7958b2e3500823b6dd2891e4e6f9f2e42332c7902351a70252a</div>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <p>Link jest ważny przez 24 godziny.</p>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.</strong></p>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER:     
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: --b1=_VpwPRTtWkBsxwqSnCMJhXZj1Oucxp4Ax9fo3mBHWZg--
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: 
+
+2025-11-26 12:44:32 Level 1: CLIENT -> SERVER: .
+
+2025-11-26 12:44:33 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1764179073 ffacd0b85a97d-42cc231dc6esm32328489f8f.7 - gsmtp
+
+2025-11-26 12:44:33 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-26 12:44:33 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-42cc231dc6esm32328489f8f.7 - gsmtp
+
+2025-11-27 10:34:47 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-42e1ca1a396sm4115800f8f.22 - gsmtp
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-11-27 10:34:47 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-11-27 10:34:47 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-27 10:34:47 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-11-27 10:34:47 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-11-27 10:34:47 Level 2: SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-42e1ca1a396sm4115800f8f.22 - gsmtp
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: RCPT TO:<dzixitkontakt@gmail.com>
+
+2025-11-27 10:34:47 Level 2: SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-42e1ca1a396sm4115800f8f.22 - gsmtp
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: DATA
+
+2025-11-27 10:34:47 Level 2: SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-42e1ca1a396sm4115800f8f.22 - gsmtp
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: Date: Thu, 27 Nov 2025 10:34:47 -0500
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: To: dzixitkontakt@gmail.com
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: From: Wypozyczalnia Samochodow <konradprojektowyuz@gmail.com>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: Subject: Weryfikacja konta - Wypozyczalnia Samochodow
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: Message-ID: <saPQEIE6P1qy6WbjmvTIeRj6vqRzDDPgMqWPDo4M@carrentaluz.rf.gd>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:  boundary="b1=_saPQEIE6P1qy6WbjmvTIeRj6vqRzDDPgMqWPDo4M"
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: --b1=_saPQEIE6P1qy6WbjmvTIeRj6vqRzDDPgMqWPDo4M
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:         
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:         
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:         
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 Wypozyczalnia Samochodow
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 Witaj, dzixitkontakt@gmail.com!
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 Dziękujemy za rejestrację w naszej wypożyczalni samochodów.
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 Aby aktywować swoje konto, kliknij w poniższy link:
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                     Aktywuj konto
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/verify.php?token=45ecf2f4c25f499b4347a633285c49446007f2a4404fd9418b7328553724dc55
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:         
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: --b1=_saPQEIE6P1qy6WbjmvTIeRj6vqRzDDPgMqWPDo4M
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     <html>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     <head>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:         <style>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:         </style>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     </head>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     <body>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 <h1>Wypozyczalnia Samochodow</h1>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 <h2>Witaj, dzixitkontakt@gmail.com!</h2>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 <p>Dziękujemy za rejestrację w naszej wypożyczalni samochodów.</p>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 <p>Aby aktywować swoje konto, kliknij w poniższy link:</p>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/verify.php?token=45ecf2f4c25f499b4347a633285c49446007f2a4404fd9418b7328553724dc55' class='button'>Aktywuj konto</a>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/verify.php?token=45ecf2f4c25f499b4347a633285c49446007f2a4404fd9418b7328553724dc55</div>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.</strong></p>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:             </div>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:         </div>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     </body>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     </html>
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER:     
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: --b1=_saPQEIE6P1qy6WbjmvTIeRj6vqRzDDPgMqWPDo4M--
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: 
+
+2025-11-27 10:34:47 Level 1: CLIENT -> SERVER: .
+
+2025-11-27 10:34:48 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1764257688 ffacd0b85a97d-42e1ca1a396sm4115800f8f.22 - gsmtp
+
+2025-11-27 10:34:48 Level 1: CLIENT -> SERVER: QUIT
+
+2025-11-27 10:34:48 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-42e1ca1a396sm4115800f8f.22 - gsmtp
+
+2025-12-04 11:55:32 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-479311e712fsm41411095e9.9 - gsmtp
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-12-04 11:55:32 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-12-04 11:55:32 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-12-04 11:55:32 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-12-04 11:55:32 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-12-04 11:55:32 Level 2: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-479311e712fsm41411095e9.9 - gsmtp
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: RCPT TO:<konradpajor73@gmail.com>
+
+2025-12-04 11:55:32 Level 2: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-479311e712fsm41411095e9.9 - gsmtp
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: DATA
+
+2025-12-04 11:55:32 Level 2: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-479311e712fsm41411095e9.9 - gsmtp
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: Date: Thu, 4 Dec 2025 11:55:32 -0500
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: To: konradpajor73@gmail.com
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: From: Wypozyczalnia Samochodow <konradprojektowyuz@gmail.com>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: Subject: Weryfikacja konta - Wypozyczalnia Samochodow
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: Message-ID: <arNKaxj2YxYvSCliLt9kH388ZghjsIEBapSITRXGw@carrentaluz.rf.gd>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:  boundary="b1=_arNKaxj2YxYvSCliLt9kH388ZghjsIEBapSITRXGw"
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: --b1=_arNKaxj2YxYvSCliLt9kH388ZghjsIEBapSITRXGw
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 Wypozyczalnia Samochodow
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 Witaj, konradpajor73@gmail.com!
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 Dziękujemy za rejestrację w naszej wypożyczalni samochodów.
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 Aby aktywować swoje konto, kliknij w poniższy link:
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                     Aktywuj konto
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/verify.php?token=7845764a3daf44d55d9974ac375a309c23fea4dee9068e0ae73325071e0995ca
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: --b1=_arNKaxj2YxYvSCliLt9kH388ZghjsIEBapSITRXGw
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     <html>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     <head>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:         <style>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:         </style>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     </head>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     <body>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 <h1>Wypozyczalnia Samochodow</h1>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             </div>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 <h2>Witaj, konradpajor73@gmail.com!</h2>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 <p>Dziękujemy za rejestrację w naszej wypożyczalni samochodów.</p>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 <p>Aby aktywować swoje konto, kliknij w poniższy link:</p>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/verify.php?token=7845764a3daf44d55d9974ac375a309c23fea4dee9068e0ae73325071e0995ca' class='button'>Aktywuj konto</a>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/verify.php?token=7845764a3daf44d55d9974ac375a309c23fea4dee9068e0ae73325071e0995ca</div>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.</strong></p>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             </div>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:             </div>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:         </div>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     </body>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     </html>
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: --b1=_arNKaxj2YxYvSCliLt9kH388ZghjsIEBapSITRXGw--
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: .
+
+2025-12-04 11:55:32 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1764867332 5b1f17b1804b1-479311e712fsm41411095e9.9 - gsmtp
+
+2025-12-04 11:55:32 Level 1: CLIENT -> SERVER: QUIT
+
+2025-12-04 11:55:32 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-479311e712fsm41411095e9.9 - gsmtp
+
+2025-12-04 12:15:07 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-479310a6db3sm43120085e9.1 - gsmtp
+
+2025-12-04 12:15:07 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-12-04 12:15:07 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-12-04 12:15:07 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-12-04 12:15:07 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-12-04 12:15:07 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-12-04 12:15:07 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-12-04 12:15:07 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-12-04 12:15:07 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-12-04 12:15:07 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-12-04 12:15:07 Level 2: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-479310a6db3sm43120085e9.1 - gsmtp
+
+2025-12-04 12:15:07 Level 1: CLIENT -> SERVER: RCPT TO:<dzixitkontakt@gmail.com>
+
+2025-12-04 12:15:07 Level 2: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-479310a6db3sm43120085e9.1 - gsmtp
+
+2025-12-04 12:15:07 Level 1: CLIENT -> SERVER: DATA
+
+2025-12-04 12:15:08 Level 2: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-479310a6db3sm43120085e9.1 - gsmtp
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: Date: Thu, 4 Dec 2025 12:15:07 -0500
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: To: dzixitkontakt@gmail.com
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: From: Wypozyczalnia Samochodow <konradprojektowyuz@gmail.com>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: Subject: Weryfikacja konta - Wypozyczalnia Samochodow
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: Message-ID: <hZqbhnoxLbcdBXiWKHQU3AkPONvePCs01Khag8ykNA@carrentaluz.rf.gd>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:  boundary="b1=_hZqbhnoxLbcdBXiWKHQU3AkPONvePCs01Khag8ykNA"
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: --b1=_hZqbhnoxLbcdBXiWKHQU3AkPONvePCs01Khag8ykNA
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 Wypozyczalnia Samochodow
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 Witaj, dzixitkontakt@gmail.com!
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 Dziękujemy za rejestrację w naszej wypożyczalni samochodów.
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 Aby aktywować swoje konto, kliknij w poniższy link:
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                     Aktywuj konto
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/verify.php?token=e3cc35feba707b4a83f3f47cecd7db9125173dd70b750154df1e9abd20cda807
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: --b1=_hZqbhnoxLbcdBXiWKHQU3AkPONvePCs01Khag8ykNA
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     <html>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     <head>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:         <style>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #3498db; 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:         </style>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     </head>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     <body>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 <h1>Wypozyczalnia Samochodow</h1>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             </div>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 <h2>Witaj, dzixitkontakt@gmail.com!</h2>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 <p>Dziękujemy za rejestrację w naszej wypożyczalni samochodów.</p>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 <p>Aby aktywować swoje konto, kliknij w poniższy link:</p>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/verify.php?token=e3cc35feba707b4a83f3f47cecd7db9125173dd70b750154df1e9abd20cda807' class='button'>Aktywuj konto</a>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/verify.php?token=e3cc35feba707b4a83f3f47cecd7db9125173dd70b750154df1e9abd20cda807</div>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty zakładałeś konto, zignoruj tego maila.</strong></p>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             </div>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:             </div>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:         </div>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     </body>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     </html>
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: --b1=_hZqbhnoxLbcdBXiWKHQU3AkPONvePCs01Khag8ykNA--
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: .
+
+2025-12-04 12:15:08 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1764868508 5b1f17b1804b1-479310a6db3sm43120085e9.1 - gsmtp
+
+2025-12-04 12:15:08 Level 1: CLIENT -> SERVER: QUIT
+
+2025-12-04 12:15:08 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-479310a6db3sm43120085e9.1 - gsmtp
+
+2025-12-04 12:15:42 Level 2: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-42f7d352a52sm4374232f8f.38 - gsmtp
+
+2025-12-04 12:15:42 Level 1: CLIENT -> SERVER: EHLO carrentaluz.rf.gd
+
+2025-12-04 12:15:42 Level 2: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [185.27.134.195]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2025-12-04 12:15:42 Level 1: CLIENT -> SERVER: AUTH LOGIN
+
+2025-12-04 12:15:42 Level 2: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-12-04 12:15:42 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-12-04 12:15:42 Level 2: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-12-04 12:15:42 Level 1: CLIENT -> SERVER: [credentials hidden]
+2025-12-04 12:15:42 Level 2: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2025-12-04 12:15:42 Level 1: CLIENT -> SERVER: MAIL FROM:<konradprojektowyuz@gmail.com>
+
+2025-12-04 12:15:42 Level 2: SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-42f7d352a52sm4374232f8f.38 - gsmtp
+
+2025-12-04 12:15:42 Level 1: CLIENT -> SERVER: RCPT TO:<dzixitkontakt@gmail.com>
+
+2025-12-04 12:15:42 Level 2: SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-42f7d352a52sm4374232f8f.38 - gsmtp
+
+2025-12-04 12:15:42 Level 1: CLIENT -> SERVER: DATA
+
+2025-12-04 12:15:43 Level 2: SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-42f7d352a52sm4374232f8f.38 - gsmtp
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: Date: Thu, 4 Dec 2025 12:15:42 -0500
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: To: dzixitkontakt@gmail.com
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: From: Wypozyczalnia Samochodow <konradprojektowyuz@gmail.com>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: Subject: Resetowanie hasla - Wypozyczalnia Samochodow
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: Message-ID: <gtZVi8pWFCfTP4tdI7lyZjEND6DEKbwAl9jvKQ@carrentaluz.rf.gd>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:  boundary="b1=_gtZVi8pWFCfTP4tdI7lyZjEND6DEKbwAl9jvKQ"
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: --b1=_gtZVi8pWFCfTP4tdI7lyZjEND6DEKbwAl9jvKQ
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 Resetowanie hasla
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 Witaj, dzixitkontakt@gmail.com!
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 Aby zresetować hasło, kliknij w poniższy link:
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                     Resetuj hasło
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 https://carrentaluz.rf.gd/reset_password.php?token=c51b8658fe7df1680e55ffaf0e22ed078d5699f9e2da3e65a1acbf6889d1dfc3
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 © 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:         
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: --b1=_gtZVi8pWFCfTP4tdI7lyZjEND6DEKbwAl9jvKQ
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     <html>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     <head>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:         <style>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .header { background: #e74c3c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .content { padding: 20px; background: #f9f9f9; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .button { display: inline-block; padding: 12px 24px; background: #e74c3c; 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                      color: white; text-decoration: none; border-radius: 4px; margin: 15px 0; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .footer { text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #ddd; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             .code { background: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; word-break: break-all; }
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:         </style>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     </head>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     <body>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:         <div class='container'>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             <div class='header'>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 <h1>Resetowanie hasla</h1>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             </div>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             <div class='content'>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 <h2>Witaj, dzixitkontakt@gmail.com!</h2>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 <p>Otrzymaliśmy prośbę o resetowanie hasła do Twojego konta.</p>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 <p>Aby zresetować hasło, kliknij w poniższy link:</p>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 <p style='text-align: center;'>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                     <a href='https://carrentaluz.rf.gd/reset_password.php?token=c51b8658fe7df1680e55ffaf0e22ed078d5699f9e2da3e65a1acbf6889d1dfc3' class='button'>Resetuj hasło</a>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 </p>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 <p>Jeśli przycisk nie działa, skopiuj poniższy link do przeglądarki:</p>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 <div class='code'>https://carrentaluz.rf.gd/reset_password.php?token=c51b8658fe7df1680e55ffaf0e22ed078d5699f9e2da3e65a1acbf6889d1dfc3</div>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 <p><strong>Jeśli to nie Ty wysłałeś prośbę o resetowanie hasła, zignoruj tego maila.</strong></p>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             </div>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             <div class='footer'>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 <p>© 2025 Wypożyczalnia Samochodów. Wszelkie prawa zastrzeżone.</p>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:                 <p>Wiadomość wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:             </div>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:         </div>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     </body>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     </html>
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER:     
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: --b1=_gtZVi8pWFCfTP4tdI7lyZjEND6DEKbwAl9jvKQ--
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: 
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: .
+
+2025-12-04 12:15:43 Level 2: SERVER -> CLIENT: 250 2.0.0 OK  1764868543 ffacd0b85a97d-42f7d352a52sm4374232f8f.38 - gsmtp
+
+2025-12-04 12:15:43 Level 1: CLIENT -> SERVER: QUIT
+
+2025-12-04 12:15:43 Level 2: SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-42f7d352a52sm4374232f8f.38 - gsmtp
+
