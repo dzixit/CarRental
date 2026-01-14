@@ -6,15 +6,9 @@ redirectIfNotCustomer();
 $database = new Database();
 $db = $database->getConnection();
 
-// Cennik na dzień dla różnych typów pojazdów
 $pricing = [
-    'sedan' => 100,
-    'suv' => 150,
-    'hatchback' => 80,
-    'coupe' => 120,
-    'convertible' => 200,
-    'van' => 180,
-    'truck' => 220
+    'sedan' => 100, 'suv' => 150, 'hatchback' => 80, 'coupe' => 120,
+    'convertible' => 200, 'van' => 180, 'truck' => 220
 ];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['make_reservation'])) {
@@ -26,7 +20,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['make_reservation'])) {
               VALUES (?, ?, ?, ?, 'pending')";
     $stmt = $db->prepare($query);
     if ($stmt->execute([$start_date, $end_date, $_SESSION['customer_id'], $vehicle_id])) {
-        $success = "Rezerwacja została złożona!";
+        
+        // Wysyłanie maila potwierdzającego
+        require_once __DIR__ . '/../includes/email_sender.php';
+        
+        // Pobierz dane klienta
+        $stmt_user = $db->prepare("SELECT email, first_name FROM Customer WHERE customer_id = ?");
+        $stmt_user->execute([$_SESSION['customer_id']]);
+        $user = $stmt_user->fetch(PDO::FETCH_ASSOC);
+        
+        // Pobierz dane pojazdu
+        $stmt_vehicle = $db->prepare("SELECT brand, model FROM VehicleModel vm JOIN Vehicle v ON v.model_id = vm.model_id WHERE v.vehicle_id = ?");
+        $stmt_vehicle->execute([$vehicle_id]);
+        $veh = $stmt_vehicle->fetch(PDO::FETCH_ASSOC);
+        
+        if ($user && $veh) {
+            sendReservationConfirmationEmail(
+                $user['email'], 
+                $user['first_name'], 
+                $veh['brand'] . ' ' . $veh['model'], 
+                $start_date, 
+                $end_date
+            );
+        }
+        
+        $success = "Rezerwacja została złożona! Sprawdź skrzynkę mailową.";
     } else {
         $error = "Błąd podczas składania rezerwacji!";
     }
@@ -43,10 +61,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['check_availability']))
     $start_date_input = $start_date;
     $end_date_input = $end_date;
     
-    // Oblicz liczbę dni
     $start = new DateTime($start_date);
     $end = new DateTime($end_date);
-    $total_days = $start->diff($end)->days + 1; // +1 bo liczymy włącznie z dniem końcowym
+    $total_days = $start->diff($end)->days + 1;
     
     $query = "SELECT v.*, vm.brand, vm.model, vm.vehicle_type 
               FROM Vehicle v 
@@ -61,13 +78,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['check_availability']))
     $stmt->execute([$start_date, $end_date, $start_date, $end_date]);
     $available_vehicles = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
-    // Oblicz koszty dla każdego pojazdu
     foreach ($available_vehicles as &$vehicle) {
-        $daily_price = $pricing[$vehicle['vehicle_type']] ?? 100; // Domyślnie 100 jeśli typ nieznany
+        $daily_price = $pricing[$vehicle['vehicle_type']] ?? 100;
         $vehicle['daily_price'] = $daily_price;
         $vehicle['total_cost'] = $daily_price * $total_days;
     }
-    unset($vehicle); // Usuń referencję
+    unset($vehicle);
 }
 ?>
 <?php require_once __DIR__ . '/../includes/header.php'; ?>
@@ -119,53 +135,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['check_availability']))
                 <div class="vehicle-details">
                     <p><strong>Typ:</strong> <?php echo $vehicle['vehicle_type']; ?></p>
                     <p><strong>Rejestracja:</strong> <?php echo $vehicle['license_plate']; ?></p>
-                    <p><strong>Rok produkcji:</strong> <?php echo $vehicle['production_year']; ?></p>
-                    <p><strong>Przebieg:</strong> <?php echo number_format($vehicle['mileage'], 0, '', ' '); ?> km</p>
-                    <p><strong>Stan techniczny:</strong> 
-                        <span class="technical-condition <?php echo strtolower($vehicle['technical_condition']); ?>">
-                            <?php 
-                            $condition_labels = [
-                                'excellent' => 'Doskonały',
-                                'good' => 'Dobry', 
-                                'fair' => 'Umiarkowany',
-                                'poor' => 'Słaby'
-                            ];
-                            echo $condition_labels[$vehicle['technical_condition']] ?? $vehicle['technical_condition'];
-                            ?>
-                        </span>
-                    </p>
-                    <p><strong>Kolor:</strong> <?php echo $vehicle['color'] ?? 'Nie określono'; ?></p>
-                    <p><strong>Paliwo:</strong> 
-                        <?php 
-                        $fuel_labels = [
-                            'petrol' => 'Benzyna',
-                            'diesel' => 'Diesel',
-                            'electric' => 'Elektryczny',
-                            'hybrid' => 'Hybryda'
-                        ];
-                        echo $fuel_labels[$vehicle['fuel_type']] ?? ($vehicle['fuel_type'] ?? 'Nie określono');
-                        ?>
-                    </p>
-                    <p><strong>Skrzynia biegów:</strong> 
-                        <?php 
-                        $transmission_labels = [
-                            'manual' => 'Manualna',
-                            'automatic' => 'Automatyczna'
-                        ];
-                        echo $transmission_labels[$vehicle['transmission']] ?? ($vehicle['transmission'] ?? 'Nie określono');
-                        ?>
-                    </p>
-                </div>
-                <div class="pricing-info">
-                    <p><strong>Cena za dzień:</strong> <?php echo $vehicle['daily_price']; ?> PLN</p>
-                    <p class="total-cost"><strong>Koszt całkowity:</strong> <?php echo $vehicle['total_cost']; ?> PLN</p>
+                    <p><strong>Koszt całkowity:</strong> <span style="color:#e74c3c;font-weight:bold;"><?php echo $vehicle['total_cost']; ?> PLN</span></p>
                 </div>
                 
                 <form method="POST" class="reservation-form-inline">
                     <input type="hidden" name="vehicle_id" value="<?php echo $vehicle['vehicle_id']; ?>">
                     <input type="hidden" name="start_date" value="<?php echo $start_date_input; ?>">
                     <input type="hidden" name="end_date" value="<?php echo $end_date_input; ?>">
-                    <button type="submit" name="make_reservation" class="btn">Zarezerwuj za <?php echo $vehicle['total_cost']; ?> PLN</button>
+                    <button type="submit" name="make_reservation" class="btn">Zarezerwuj</button>
                 </form>
             </div>
             <?php endforeach; ?>
@@ -177,7 +154,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['check_availability']))
 </div>
 
 <script>
-// Automatyczne przeliczanie przy zmianie dat
 document.addEventListener('DOMContentLoaded', function() {
     const startDateInput = document.getElementById('start_date');
     const endDateInput = document.getElementById('end_date');
@@ -185,163 +161,30 @@ document.addEventListener('DOMContentLoaded', function() {
     function calculateDays() {
         const start = new Date(startDateInput.value);
         const end = new Date(endDateInput.value);
-        
         if (start && end && start <= end) {
             const diffTime = Math.abs(end - start);
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) + 1;
-            
-            // Aktualizuj podsumowanie jeśli istnieje
             const summaryElement = document.querySelector('.reservation-summary');
             if (summaryElement && startDateInput.value && endDateInput.value) {
                 summaryElement.innerHTML = `
                     <p><strong>Okres wynajmu:</strong> ${diffDays} dni</p>
-                    <p><strong>Od:</strong> ${formatDate(startDateInput.value)} 
-                    <strong>Do:</strong> ${formatDate(endDateInput.value)}</p>
+                    <p><strong>Od:</strong> ${startDateInput.value} <strong>Do:</strong> ${endDateInput.value}</p>
                 `;
             }
         }
     }
-    
-    function formatDate(dateString) {
-        const date = new Date(dateString);
-        return date.toLocaleDateString('pl-PL');
-    }
-    
     startDateInput.addEventListener('change', calculateDays);
     endDateInput.addEventListener('change', calculateDays);
-    
-    // Oblicz początkową liczbę dni jeśli formularz został już wysłany
-    if (startDateInput.value && endDateInput.value) {
-        calculateDays();
-    }
 });
 </script>
 
 <style>
-.reservation-summary {
-    background: #e8f5e8;
-    padding: 1rem;
-    border-radius: 5px;
-    margin: 1rem 0;
-    border-left: 4px solid #27ae60;
-}
 
-.reservation-summary p {
-    margin: 0.25rem 0;
-    color: #2c3e50;
-}
-
-.pricing-info {
-    background: #f8f9fa;
-    padding: 0.75rem;
-    border-radius: 5px;
-    margin: 0.75rem 0;
-    border-left: 3px solid #3498db;
-}
-
-.total-cost {
-    font-size: 1.1rem;
-    color: #e74c3c;
-    font-weight: bold;
-}
-
-.vehicle-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border: 1px solid #e0e0e0;
-    transition: transform 0.2s;
-    display: flex;
-    flex-direction: column;
-}
-
-.vehicle-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-}
-
-.vehicle-image {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.vehicle-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-}
-
-.vehicle-details {
-    flex-grow: 1;
-    margin-bottom: 1rem;
-}
-
-.vehicle-details p {
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-}
-
-.technical-condition {
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-.technical-condition.excellent {
-    background: #d4edda;
-    color: #155724;
-}
-
-.technical-condition.good {
-    background: #d1ecf1;
-    color: #0c5460;
-}
-
-.technical-condition.fair {
-    background: #fff3cd;
-    color: #856404;
-}
-
-.technical-condition.poor {
-    background: #f8d7da;
-    color: #721c24;
-}
-
-.reservation-form-inline {
-    margin-top: auto;
-    text-align: center;
-}
-
-.reservation-form-inline .btn {
-    width: 100%;
-    background: #27ae60;
-    margin-top: 1rem;
-}
-
-.reservation-form-inline .btn:hover {
-    background: #219a52;
-}
-
-.vehicles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-@media (max-width: 768px) {
-    .vehicles-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-row {
-        flex-direction: column;
-    }
-}
+.reservation-summary { background: #e8f5e8; padding: 1rem; border-radius: 5px; margin: 1rem 0; border-left: 4px solid #27ae60; }
+.vehicle-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border: 1px solid #e0e0e0; margin-bottom: 20px;}
+.vehicles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.vehicle-image img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+.reservation-form-inline .btn { width: 100%; background: #27ae60; margin-top: 1rem; }
 </style>
 
 <?php require_once __DIR__ . '/../includes/footer.php'; ?>

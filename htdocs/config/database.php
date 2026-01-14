@@ -1,9 +1,9 @@
 <?php
 class Database {
-    private $host = "";
-    private $db_name = "";
-    private $username = "";
-    private $password = "";
+    private $host = "sql203.infinityfree.com";
+    private $db_name = "if0_40498177_carrental";
+    private $username = "if0_40498177";
+    private $password = "g0wMP4YAbnNn";
     public $conn;
 
     public function getConnection() {

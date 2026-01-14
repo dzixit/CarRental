@@ -12,7 +12,9 @@ require_once __DIR__ . '/auth.php';
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="nav-logo">CarRental</h1>
+            <h1 class="nav-logo">
+                <a href="/index.php" style="text-decoration: none; color: inherit;">CarRental</a>
+            </h1>
             <div class="nav-menu">
                 <?php if (isLoggedIn()): ?>
                     <?php if (isAdmin()): ?>
