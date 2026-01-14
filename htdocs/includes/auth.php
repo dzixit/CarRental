@@ -1,5 +1,42 @@
 <?php
-session_start();
+// Funkcja bezpiecznego startu sesji z flagami ciasteczek
+function secureSessionStart() {
+    if (session_status() === PHP_SESSION_NONE) {
+        // Ustawienia bezpiecznych ciasteczek
+        $cookieParams = session_get_cookie_params();
+        session_set_cookie_params([
+            'lifetime' => $cookieParams['lifetime'],
+            'path' => '/',
+            'domain' => $cookieParams['domain'],
+            'secure' => true, // Wymaga HTTPS (zmień na false tylko jeśli testujesz na localhost bez SSL)
+            'httponly' => true, // Zapobiega dostępowi JavaScript do ciasteczka sesji (ochrona XSS)
+            'samesite' => 'Strict' // Ochrona przed CSRF
+        ]);
+        session_start();
+    }
+}
+
+// Wywołujemy bezpieczny start sesji, jeśli ten plik jest dołączany
+secureSessionStart();
+
+// --- ZABEZPIECZENIE CSRF ---
+
+// Generowanie tokena CSRF
+function generateCsrfToken() {
+    if (empty($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    }
+    return $_SESSION['csrf_token'];
+}
+
+// Weryfikacja tokena CSRF
+function verifyCsrfToken($token) {
+    if (!isset($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $token)) {
+        die('Błąd CSRF: Nieprawidłowy token bezpieczeństwa.');
+    }
+}
+
+
 
 function isLoggedIn() {
     return isset($_SESSION['user_id']);
