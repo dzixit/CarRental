@@ -33,13 +33,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['extend_rental'])) {
     }
 }
 
-// Pobierz kary klienta
-$penalties_query = "SELECT SUM(amount) as total_penalties FROM Penalty p 
-                   JOIN Rental r ON p.rental_id = r.rental_id 
-                   WHERE r.customer_id = ? AND p.penalty_status = 'pending'";
-$stmt = $db->prepare($penalties_query);
+// Pobierz kary klienta (suma)
+$penalties_sum_query = "SELECT SUM(amount) as total_penalties FROM Penalty p 
+                       JOIN Rental r ON p.rental_id = r.rental_id 
+                       WHERE r.customer_id = ? AND p.penalty_status = 'pending'";
+$stmt = $db->prepare($penalties_sum_query);
 $stmt->execute([$_SESSION['customer_id']]);
-$penalties = $stmt->fetch(PDO::FETCH_ASSOC);
+$penalties_sum = $stmt->fetch(PDO::FETCH_ASSOC);
+
+// Pobierz listę kar klienta
+$penalties_list_query = "SELECT p.*, r.rental_date, v.license_plate, vm.brand, vm.model 
+                        FROM Penalty p 
+                        JOIN Rental r ON p.rental_id = r.rental_id 
+                        JOIN Vehicle v ON r.vehicle_id = v.vehicle_id 
+                        JOIN VehicleModel vm ON v.model_id = vm.model_id 
+                        WHERE r.customer_id = ? 
+                        ORDER BY p.imposition_date DESC";
+$stmt = $db->prepare($penalties_list_query);
+$stmt->execute([$_SESSION['customer_id']]);
+$penalties_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // Pobierz historię wypożyczeń
 $history_query = "SELECT r.*, v.license_plate, vm.brand, vm.model 
@@ -87,9 +99,74 @@ $active_rentals = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="error"><?php echo $error; ?></div>
     <?php endif; ?>
     
-    <div class="info-card">
-        <h3>Podsumowanie Kar</h3>
-        <p class="penalty-amount">Suma kar do zapłaty: <strong><?php echo $penalties['total_penalties'] ?? 0; ?> PLN</strong></p>
+    <div class="penalties-section">
+        <h3>Moje Kary</h3>
+        
+        <div class="penalty-summary">
+            <div class="info-card">
+                <h4>Podsumowanie Kar</h4>
+                <p class="penalty-amount">Suma kar do zapłaty: <strong><?php echo $penalties_sum['total_penalties'] ?? 0; ?> PLN</strong></p>
+                <?php if ($penalties_sum['total_penalties'] > 0): ?>
+                    <p class="penalty-warning">Prosimy o uregulowanie należności w terminie.</p>
+                <?php endif; ?>
+            </div>
+
+            <?php if (!empty($penalties_list)): ?>
+            <div class="penalties-list">
+                <h4>Lista Kar</h4>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data nałożenia</th>
+                                <th>Pojazd</th>
+                                <th>Kwota</th>
+                                <th>Powód</th>
+                                <th>Termin płatności</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($penalties_list as $penalty): ?>
+                            <tr>
+                                <td><?php echo $penalty['imposition_date']; ?></td>
+                                <td>
+                                    <?php echo $penalty['brand'] . ' ' . $penalty['model']; ?><br>
+                                    <small><?php echo $penalty['license_plate']; ?></small>
+                                </td>
+                                <td><strong><?php echo $penalty['amount']; ?> PLN</strong></td>
+                                <td><?php echo $penalty['reason']; ?></td>
+                                <td>
+                                    <?php echo $penalty['payment_deadline']; ?>
+                                    <?php if (strtotime($penalty['payment_deadline']) < strtotime(date('Y-m-d')) && $penalty['penalty_status'] == 'pending'): ?>
+                                        <span class="overdue-badge">PRZETERMINOWANA</span>
+                                    <?php endif; ?>
+                                </td>
+                                <td>
+                                    <span class="status-badge <?php echo $penalty['penalty_status']; ?>">
+                                        <?php 
+                                        $status_text = [
+                                            'pending' => 'Do zapłaty',
+                                            'paid' => 'Opłacona',
+                                            'cancelled' => 'Anulowana',
+                                            'overdue' => 'Przeterminowana'
+                                        ];
+                                        echo $status_text[$penalty['penalty_status']] ?? $penalty['penalty_status'];
+                                        ?>
+                                    </span>
+                                </td>
+                            </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <?php else: ?>
+                <div class="no-penalties">
+                    <p>Brak aktywnych kar.</p>
+                </div>
+            <?php endif; ?>
+        </div>
     </div>
 
     <!-- Aktywne rezerwacje -->
@@ -116,7 +193,15 @@ $active_rentals = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <td><?php echo $reservation['end_date']; ?></td>
                             <td>
                                 <span class="status-badge <?php echo $reservation['reservation_status']; ?>">
-                                    <?php echo $reservation['reservation_status']; ?>
+                                    <?php 
+                                    $res_status_text = [
+                                        'pending' => 'Oczekująca',
+                                        'confirmed' => 'Potwierdzona',
+                                        'cancelled' => 'Anulowana',
+                                        'completed' => 'Zakończona'
+                                    ];
+                                    echo $res_status_text[$reservation['reservation_status']] ?? $reservation['reservation_status'];
+                                    ?>
                                 </span>
                             </td>
                         </tr>
@@ -211,7 +296,15 @@ $active_rentals = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <td><?php echo $rental['actual_return_date'] ?? 'Brak'; ?></td>
                             <td>
                                 <span class="status-badge <?php echo $rental['rental_status']; ?>">
-                                    <?php echo $rental['rental_status']; ?>
+                                    <?php 
+                                    $rental_status_text = [
+                                        'active' => 'Aktywne',
+                                        'completed' => 'Zakończone',
+                                        'cancelled' => 'Anulowane',
+                                        'overdue' => 'Przeterminowane'
+                                    ];
+                                    echo $rental_status_text[$rental['rental_status']] ?? $rental['rental_status'];
+                                    ?>
                                 </span>
                             </td>
                         </tr>
@@ -253,6 +346,101 @@ window.onclick = function(event) {
 </script>
 
 <style>
+.penalties-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.penalties-section h3 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.penalty-summary {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.info-card {
+    background: #fff8e1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #ff9800;
+}
+
+.info-card h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.penalty-amount {
+    font-size: 1.3rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.penalty-warning {
+    color: #e67e22;
+    font-style: italic;
+    margin: 0.5rem 0 0 0;
+}
+
+.penalties-list h4 {
+    margin: 1.5rem 0 1rem 0;
+    color: #333;
+}
+
+.no-penalties {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.overdue-badge {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-badge.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-badge.paid {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-badge.cancelled {
+    background: #e2e3e5;
+    color: #383d41;
+}
+
+.status-badge.overdue {
+    background: #f8d7da;
+    color: #721c24;
+}
+
 .reservations-section,
 .active-rentals-section,
 .history-section {
@@ -269,12 +457,17 @@ window.onclick = function(event) {
     color: #2c3e50;
 }
 
-.status-badge.pending {
-    background: #fff3cd;
-    color: #856404;
+.status-badge.confirmed {
+    background: #d4edda;
+    color: #155724;
 }
 
-.status-badge.confirmed {
+.status-badge.active {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.status-badge.completed {
     background: #d4edda;
     color: #155724;
 }
@@ -304,6 +497,55 @@ window.onclick = function(event) {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #34495e;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background: #f8f9fa;
+}
+
+small {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 0.75rem 0.5rem;
+    }
 }
 </style>
 

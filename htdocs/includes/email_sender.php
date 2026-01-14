@@ -13,9 +13,11 @@ function sendVerificationEmail($email, $token, $username) {
     
     $subject = "Weryfikacja konta - Wypozyczalnia Samochodow";
     
+    // ZMIANA: Dodano meta tag charset w sekcji head
     $message = "
     <html>
     <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
         <style>
             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
@@ -30,7 +32,7 @@ function sendVerificationEmail($email, $token, $username) {
     <body>
         <div class='container'>
             <div class='header'>
-                <h1>Wypozyczalnia Samochodow</h1>
+                <h1>Wypożyczalnia Samochodów</h1>
             </div>
             <div class='content'>
                 <h2>Witaj, $username!</h2>
@@ -60,9 +62,11 @@ function sendPasswordResetEmail($email, $token, $username) {
     
     $subject = "Resetowanie hasla - Wypozyczalnia Samochodow";
     
+    // ZMIANA: Dodano meta tag charset w sekcji head
     $message = "
     <html>
     <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
         <style>
             body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
             .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
@@ -77,7 +81,7 @@ function sendPasswordResetEmail($email, $token, $username) {
     <body>
         <div class='container'>
             <div class='header'>
-                <h1>Resetowanie hasla</h1>
+                <h1>Resetowanie hasła</h1>
             </div>
             <div class='content'>
                 <h2>Witaj, $username!</h2>
@@ -106,6 +110,10 @@ function sendEmailPHPMailer($to, $subject, $message) {
     $mail = new PHPMailer(true);
     
     try {
+        //  Ustawienie kodowania na UTF-8
+        $mail->CharSet = 'UTF-8';
+        $mail->Encoding = 'base64'; 
+
         // Server settings - alternatywna wersja z SSL
         $mail->isSMTP();
         $mail->Host       = SMTP_HOST;
@@ -140,7 +148,7 @@ function sendEmailPHPMailer($to, $subject, $message) {
         return false;
     }
 }
-// Zachowaj starą funkcję dla kompatybilności
+
 function sendEmail($to, $subject, $message) {
     return sendEmailPHPMailer($to, $subject, $message);
 }
