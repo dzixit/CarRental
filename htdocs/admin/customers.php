@@ -170,12 +170,7 @@ $base_where = !empty($base_where_parts) ? ' AND ' . implode(' AND ', $base_where
 // Klienci
 $customer_where = ''; $customer_params = [];
 if (!empty($search_surname)) { $customer_where = " WHERE last_name LIKE ?"; $customer_params = ["%$search_surname%"]; }
-if (!empty($search_plate)) {
-    $plate_join = " v.license_plate LIKE ?";
-    $subq = "SELECT DISTINCT c.customer_id FROM Customer c JOIN Rental r ON c.customer_id = r.customer_id JOIN Vehicle v ON r.vehicle_id = v.vehicle_id WHERE r.rental_status = 'active' AND $plate_join UNION SELECT DISTINCT c.customer_id FROM Customer c JOIN Reservation res ON c.customer_id = res.customer_id JOIN Vehicle v ON res.vehicle_id = v.vehicle_id WHERE res.reservation_status IN ('pending', 'confirmed') AND $plate_join";
-    if (!empty($customer_where)) { $customer_where .= " AND customer_id IN ($subq)"; $customer_params = array_merge($customer_params, ["%$search_plate%", "%$search_plate%"]); }
-    else { $customer_where = " WHERE customer_id IN ($subq)"; $customer_params = ["%$search_plate%", "%$search_plate%"]; }
-}
+
 $customers = $db->prepare("SELECT * FROM Customer $customer_where ORDER BY registration_date DESC");
 $customers->execute($customer_params);
 $customers = $customers->fetchAll(PDO::FETCH_ASSOC);
@@ -227,11 +222,12 @@ foreach ($customers as $c) {
         <div class="content">
             <div class="table-container">
                 <table>
-                    <thead><tr><th>Klient</th><th>Pojazd</th><th>Od</th><th>Do</th><th>Akcje</th></tr></thead>
+                    <thead><tr><th>Klient</th><th>Rejestracja</th><th>Pojazd</th><th>Od</th><th>Do</th><th>Akcje</th></tr></thead>
                     <tbody>
                     <?php foreach ($active_reservations as $res): ?>
                         <tr>
                             <td><?php echo $res['first_name'].' '.$res['last_name']; ?></td>
+							<td><?php echo $res['license_plate']; ?></td>
                             <td><?php echo $res['brand'].' '.$res['model']; ?></td>
                             <td><?php echo $res['start_date']; ?></td>
                             <td><?php echo $res['end_date']; ?></td>
@@ -275,11 +271,12 @@ foreach ($customers as $c) {
         <div class="content">
             <div class="table-container">
                 <table>
-                    <thead><tr><th>Klient</th><th>Pojazd</th><th>Data zwrotu</th><th>Akcje</th></tr></thead>
+                    <thead><tr><th>Klient</th><th>Rejestracja</th><th>Pojazd</th><th>Data zwrotu</th><th>Akcje</th></tr></thead>
                     <tbody>
                     <?php foreach ($active_rentals as $rent): ?>
                         <tr>
                             <td><?php echo $rent['first_name'].' '.$rent['last_name']; ?></td>
+                            <td><?php echo $rent['license_plate']; ?></td>
                             <td><?php echo $rent['brand'].' '.$rent['model']; ?></td>
                             <td><?php echo $rent['planned_return_date']; ?></td>
                             <td>
