@@ -347,3 +347,16 @@ th {
         flex: 1 1 100%;
     }
 }
+
+
+.admin-form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .admin-form-grid {
+        grid-template-columns: 1fr;
+    }
+}

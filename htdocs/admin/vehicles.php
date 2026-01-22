@@ -125,7 +125,7 @@ unset($_SESSION['success'], $_SESSION['error']);
     <div class="add-vehicle-form" style="background: #f4f4f4; padding: 20px; border-radius: 8px; margin: 20px 0;">
         <h3>Dodaj nowy pojazd</h3>
         <form method="POST">
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+            <div class="admin-form-grid">
                 <input type="text" name="brand" placeholder="Marka (np. Toyota)" required>
                 <input type="text" name="model" placeholder="Model (np. Corolla)" required>
                 <select name="vehicle_type">
@@ -157,39 +157,42 @@ unset($_SESSION['success'], $_SESSION['error']);
         </form>
     </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Samochód</th>
-                <th>Rejestracja</th>
-                <th>Rok</th>
-                <th>Przebieg</th>
-                <th>Stan</th>
-                <th>Akcje</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($vehicles as $v): ?>
-            <tr>
-                <td><?php echo htmlspecialchars($v['brand'] . ' ' . $v['model']); ?></td>
-                <td><strong><?php echo htmlspecialchars($v['license_plate']); ?></strong></td>
-                <td><?php echo htmlspecialchars($v['production_year']); ?></td>
-                <td><?php echo number_format($v['mileage'], 0, '', ' '); ?> km</td>
-                <td><span class="status-badge status-<?php echo $v['status']; ?>"><?php echo $v['status']; ?></span></td>
-                <td>
-                    <button class="btn btn-sm" onclick='openModal(<?php echo json_encode($v); ?>)'>Szczegóły</button>
-                    
-                    <?php if ($v['status'] === 'maintenance'): ?>
-                    <form method="POST" style="display:inline;" onsubmit="return confirm('Zakończyć naprawę?')">
-                        <input type="hidden" name="vehicle_id" value="<?php echo $v['vehicle_id']; ?>">
-                        <button type="submit" name="finish_maintenance" class="btn btn-sm btn-success">Naprawiono</button>
-                    </form>
-                    <?php endif; ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Samochód</th>
+                    <th>Rejestracja</th>
+                    <th>Rok</th>
+                    <th>Przebieg</th>
+                    <th>Stan</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($vehicles as $v): ?>
+                <tr>
+                    <td><?php echo htmlspecialchars($v['brand'] . ' ' . $v['model']); ?></td>
+                    <td><strong><?php echo htmlspecialchars($v['license_plate']); ?></strong></td>
+                    <td><?php echo htmlspecialchars($v['production_year']); ?></td>
+                    <td><?php echo number_format($v['mileage'], 0, '', ' '); ?> km</td>
+                    <td><span class="status-badge status-<?php echo $v['status']; ?>"><?php echo $v['status']; ?></span></td>
+                    <td>
+                        <button class="btn btn-sm" onclick='openModal(<?php echo json_encode($v); ?>)'>Szczegóły</button>
+                        
+                        <?php if ($v['status'] === 'maintenance'): ?>
+                        <form method="POST" style="display:inline;" onsubmit="return confirm('Zakończyć naprawę?')">
+                            <input type="hidden" name="vehicle_id" value="<?php echo $v['vehicle_id']; ?>">
+                            <button type="submit" name="finish_maintenance" class="btn btn-sm btn-success">Naprawiono</button>
+                        </form>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+
 </div>
 
 <div id="vModal" class="modal">

@@ -128,9 +128,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['check_availability']))
             <?php foreach ($available_vehicles as $vehicle): ?>
             <div class="vehicle-card">
                 <div class="vehicle-image">
-                    <img src="https://via.placeholder.com/300x200/2c3e50/ffffff?text=<?php echo urlencode($vehicle['brand'].'+'.$vehicle['model']); ?>" 
-                         alt="<?php echo $vehicle['brand'] . ' ' . $vehicle['model']; ?>">
-                </div>
+   					 <img src="../images/car-placeholder.png" 
+         			alt="<?php echo $vehicle['brand'] . ' ' . $vehicle['model']; ?>">
+				</div>
                 <h4><?php echo $vehicle['brand'] . ' ' . $vehicle['model']; ?></h4>
                 <div class="vehicle-details">
                     <p><strong>Typ:</strong> <?php echo $vehicle['vehicle_type']; ?></p>
