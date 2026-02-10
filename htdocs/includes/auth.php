@@ -19,7 +19,7 @@ function secureSessionStart() {
 // Wywołujemy bezpieczny start sesji, jeśli ten plik jest dołączany
 secureSessionStart();
 
-//  ZABEZPIECZENIE CSRF 
+// --- ZABEZPIECZENIE CSRF ---
 
 // Generowanie tokena CSRF
 function generateCsrfToken() {

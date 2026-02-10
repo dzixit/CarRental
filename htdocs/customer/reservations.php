@@ -65,17 +65,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['check_availability']))
     $end = new DateTime($end_date);
     $total_days = $start->diff($end)->days + 1;
     
-    $query = "SELECT v.*, vm.brand, vm.model, vm.vehicle_type 
-              FROM Vehicle v 
+    // ZMIENIONO: Rozbudowane zapytanie sprawdzające zarówno Rental jak i Reservation
+    $query = "SELECT v.*, vm.* FROM Vehicle v 
               JOIN VehicleModel vm ON v.model_id = vm.model_id 
               WHERE v.status = 'available' 
               AND v.vehicle_id NOT IN (
+                  -- Sprawdź aktywne wypożyczenia
                   SELECT vehicle_id FROM Rental 
                   WHERE rental_status = 'active' 
                   AND (rental_date BETWEEN ? AND ? OR planned_return_date BETWEEN ? AND ?)
+              )
+              AND v.vehicle_id NOT IN (
+                  -- ZMIENIONO: Sprawdź rezerwacje (pending oraz confirmed)
+                  SELECT vehicle_id FROM Reservation 
+                  WHERE reservation_status IN ('pending', 'confirmed') 
+                  AND (start_date BETWEEN ? AND ? OR end_date BETWEEN ? AND ?)
               )";
+              
     $stmt = $db->prepare($query);
-    $stmt->execute([$start_date, $end_date, $start_date, $end_date]);
+    // ZMIENIONO: Przekazujemy daty 4 razy (2x dla Rental, 2x dla Reservation)
+    $stmt->execute([
+        $start_date, $end_date, $start_date, $end_date, // Parametry dla Rental
+        $start_date, $end_date, $start_date, $end_date  // Parametry dla Reservation
+    ]);
     $available_vehicles = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     foreach ($available_vehicles as &$vehicle) {
@@ -132,17 +144,33 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['check_availability']))
          			alt="<?php echo $vehicle['brand'] . ' ' . $vehicle['model']; ?>">
 				</div>
                 <h4><?php echo $vehicle['brand'] . ' ' . $vehicle['model']; ?></h4>
+                
                 <div class="vehicle-details">
-                    <p><strong>Typ:</strong> <?php echo $vehicle['vehicle_type']; ?></p>
-                    <p><strong>Rejestracja:</strong> <?php echo $vehicle['license_plate']; ?></p>
-                    <p><strong>Koszt całkowity:</strong> <span style="color:#e74c3c;font-weight:bold;"><?php echo $vehicle['total_cost']; ?> PLN</span></p>
+                    <div class="details-grid">
+                        <p><strong>Typ:</strong> <?php echo $vehicle['vehicle_type']; ?></p>
+                        <p><strong>Rejestracja:</strong> <?php echo $vehicle['license_plate']; ?></p>
+                        <p><strong>Rok:</strong> <?php echo $vehicle['production_year'] ?? $vehicle['year'] ?? '-'; ?></p>
+                        <p><strong>Paliwo:</strong> <?php echo $vehicle['fuel_type'] ?? '-'; ?></p>
+                        <p><strong>Skrzynia:</strong> <?php echo $vehicle['transmission'] ?? '-'; ?></p>
+                        <p><strong>Miejsca:</strong> <?php echo $vehicle['seats'] ?? $vehicle['seats_count'] ?? '-'; ?></p>
+                        <p><strong>Kolor:</strong> <?php echo $vehicle['color'] ?? '-'; ?></p>
+                        <p><strong>Silnik:</strong> <?php echo $vehicle['engine_power'] ?? '-'; ?> KM</p>
+                    </div>
+                    
+                    <p class="price-tag">Koszt całkowity: <span><?php echo $vehicle['total_cost']; ?> PLN</span></p>
                 </div>
                 
-                <form method="POST" class="reservation-form-inline">
+                <form method="POST" class="reservation-form-inline" id="resForm_<?php echo $vehicle['vehicle_id']; ?>">
                     <input type="hidden" name="vehicle_id" value="<?php echo $vehicle['vehicle_id']; ?>">
                     <input type="hidden" name="start_date" value="<?php echo $start_date_input; ?>">
                     <input type="hidden" name="end_date" value="<?php echo $end_date_input; ?>">
-                    <button type="submit" name="make_reservation" class="btn">Zarezerwuj</button>
+                    
+                    <button type="button" 
+                            class="btn" 
+                            onclick="openConfirmationModal('<?php echo $vehicle['brand'] . ' ' . $vehicle['model']; ?>', 'resForm_<?php echo $vehicle['vehicle_id']; ?>')">
+                        Zarezerwuj
+                    </button>
+                    <input type="hidden" name="make_reservation" value="1">
                 </form>
             </div>
             <?php endforeach; ?>
@@ -151,6 +179,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['check_availability']))
     <?php elseif ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['check_availability'])): ?>
         <div class="info">Brak dostępnych samochodów w wybranym terminie.</div>
     <?php endif; ?>
+</div>
+
+<div id="confirmationModal" class="form-modal" style="display: none;">
+    <div class="modal-content">
+        <h3>Potwierdzenie rezerwacji</h3>
+        <p>Czy na pewno chcesz zarezerwować ten samochód?</p>
+        <p id="modalVehicleName" style="font-size: 1.2rem; font-weight: bold; color: #2c3e50; margin: 15px 0;"></p>
+        <div class="form-buttons" style="justify-content: center;">
+            <button id="confirmBtn" class="btn" style="background-color: #27ae60;">Tak, rezerwuję</button>
+            <button onclick="closeConfirmationModal()" class="btn" style="background-color: #95a5a6;">Nie</button>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -176,15 +216,95 @@ document.addEventListener('DOMContentLoaded', function() {
     startDateInput.addEventListener('change', calculateDays);
     endDateInput.addEventListener('change', calculateDays);
 });
+
+let currentFormId = null;
+
+function openConfirmationModal(vehicleName, formId) {
+    document.getElementById('modalVehicleName').textContent = vehicleName;
+    currentFormId = formId;
+    document.getElementById('confirmationModal').style.display = 'flex';
+}
+
+function closeConfirmationModal() {
+    document.getElementById('confirmationModal').style.display = 'none';
+    currentFormId = null;
+}
+
+document.getElementById('confirmBtn').addEventListener('click', function() {
+    if (currentFormId) {
+        document.getElementById(currentFormId).submit();
+    }
+});
+
+window.onclick = function(event) {
+    const modal = document.getElementById('confirmationModal');
+    if (event.target === modal) {
+        closeConfirmationModal();
+    }
+}
 </script>
 
 <style>
-
 .reservation-summary { background: #e8f5e8; padding: 1rem; border-radius: 5px; margin: 1rem 0; border-left: 4px solid #27ae60; }
 .vehicle-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border: 1px solid #e0e0e0; margin-bottom: 20px;}
 .vehicles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
 .vehicle-image img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
-.reservation-form-inline .btn { width: 100%; background: #27ae60; margin-top: 1rem; }
+.reservation-form-inline .btn { width: 100%; background: #27ae60; margin-top: 1rem; cursor: pointer; }
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.details-grid p {
+    margin: 0;
+    padding: 0.2rem 0;
+    border-bottom: 1px dashed #eee;
+}
+.price-tag {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+.price-tag span {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.form-modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
 </style>
 
 <?php require_once __DIR__ . '/../includes/footer.php'; ?>

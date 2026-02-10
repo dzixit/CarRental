@@ -6,9 +6,33 @@ redirectIfNotCustomer();
 $database = new Database();
 $db = $database->getConnection();
 
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cancel_reservation'])) {
+    $reservation_id = $_POST['reservation_id'];
+    
+    // Sprawdź czy rezerwacja należy do klienta i jest w statusie pending
+    $check_res_query = "SELECT reservation_id FROM Reservation 
+                        WHERE reservation_id = ? AND customer_id = ? AND reservation_status = 'pending'";
+    $stmt_check = $db->prepare($check_res_query);
+    $stmt_check->execute([$reservation_id, $_SESSION['customer_id']]);
+    
+    if ($stmt_check->rowCount() > 0) {
+        $cancel_query = "UPDATE Reservation SET reservation_status = 'cancelled' WHERE reservation_id = ?";
+        $stmt_cancel = $db->prepare($cancel_query);
+        if ($stmt_cancel->execute([$reservation_id])) {
+            $success = "Rezerwacja została pomyślnie anulowana.";
+        } else {
+            $error = "Wystąpił błąd podczas anulowania rezerwacji.";
+        }
+    } else {
+        $error = "Nie można anulować tej rezerwacji (mogła zostać już przetworzona lub nie istnieje).";
+    }
+}
+
+
 // Przedłużenie wypożyczenia
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['extend_rental'])) {
-    $rental_id = $_POST['rental_id'];
+    $rental_id = $_POST['extend_rental_id_val']; // Zmieniono nazwę pola, aby uniknąć konfliktów
     $new_return_date = $_POST['new_return_date'];
     
     // Sprawdź czy pojazd jest dostępny w nowym terminie
@@ -169,7 +193,6 @@ $active_rentals = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 
-    <!-- Aktywne rezerwacje -->
     <div class="reservations-section">
         <h3>Moje Rezerwacje</h3>
         <?php if (empty($active_reservations)): ?>
@@ -183,7 +206,7 @@ $active_rentals = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <th>Data rozpoczęcia</th>
                             <th>Data zakończenia</th>
                             <th>Status</th>
-                        </tr>
+                            <th>Akcje</th> </tr>
                     </thead>
                     <tbody>
                         <?php foreach ($active_reservations as $reservation): ?>
@@ -204,6 +227,15 @@ $active_rentals = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     ?>
                                 </span>
                             </td>
+                            <td>
+                                <?php if ($reservation['reservation_status'] == 'pending'): ?>
+                                    <button type="button" 
+                                            class="btn btn-small btn-danger" 
+                                            onclick="showCancelModal(<?php echo $reservation['reservation_id']; ?>, '<?php echo $reservation['brand'] . ' ' . $reservation['model']; ?>')">
+                                        Anuluj
+                                    </button>
+                                <?php endif; ?>
+                            </td>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>
@@ -212,7 +244,6 @@ $active_rentals = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php endif; ?>
     </div>
 
-    <!-- Aktywne wypożyczenia z możliwością przedłużenia -->
     <div class="active-rentals-section">
         <h3>Aktywne Wypożyczenia</h3>
         <?php if (empty($active_rentals)): ?>
@@ -248,12 +279,28 @@ $active_rentals = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php endif; ?>
     </div>
 
-    <!-- Formularz przedłużenia wypożyczenia -->
+    <div id="cancelReservationModal" class="form-modal" style="display: none;">
+        <div class="modal-content">
+            <h3>Anulowanie rezerwacji</h3>
+            <p>Czy na pewno chcesz anulować rezerwację samochodu:</p>
+            <p id="cancelModalVehicleName" style="font-weight: bold; margin: 10px 0; color: #e74c3c;"></p>
+            
+            <form method="POST">
+                <input type="hidden" name="reservation_id" id="cancel_reservation_id">
+                <input type="hidden" name="cancel_reservation" value="1">
+                <div class="form-buttons" style="justify-content: center;">
+                    <button type="submit" class="btn btn-danger">Tak, anuluj</button>
+                    <button type="button" onclick="hideCancelModal()" class="btn btn-secondary">Wróć</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div id="extendForm" class="form-modal" style="display: none;">
         <div class="modal-content">
             <h3>Przedłuż Wypożyczenie</h3>
             <form method="POST">
-                <input type="hidden" name="rental_id" id="extend_rental_id">
+                <input type="hidden" name="extend_rental_id_val" id="extend_rental_id">
                 <div class="form-group">
                     <label>Obecna data zwrotu:</label>
                     <input type="text" id="current_return_date" readonly style="background: #f0f0f0;">
@@ -270,7 +317,6 @@ $active_rentals = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 
-    <!-- Historia wypożyczeń -->
     <div class="history-section">
         <h3>Historia Wypożyczeń</h3>
         <?php if (empty($rental_history)): ?>
@@ -317,6 +363,7 @@ $active_rentals = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <script>
+// Funkcje dla przedłużania wypożyczenia
 function showExtendForm(rentalId, currentReturnDate) {
     document.getElementById('extend_rental_id').value = rentalId;
     document.getElementById('current_return_date').value = currentReturnDate;
@@ -329,223 +376,81 @@ function showExtendForm(rentalId, currentReturnDate) {
     document.getElementById('new_return_date').min = minDate;
     document.getElementById('new_return_date').value = minDate;
     
-    document.getElementById('extendForm').style.display = 'block';
+    document.getElementById('extendForm').style.display = 'flex'; // Zmieniono na flex dla centrowania
 }
 
 function hideExtendForm() {
     document.getElementById('extendForm').style.display = 'none';
 }
 
-// Zamknij modal po kliknięciu poza nim
+
+function showCancelModal(reservationId, vehicleName) {
+    document.getElementById('cancel_reservation_id').value = reservationId;
+    document.getElementById('cancelModalVehicleName').textContent = vehicleName;
+    document.getElementById('cancelReservationModal').style.display = 'flex';
+}
+
+function hideCancelModal() {
+    document.getElementById('cancelReservationModal').style.display = 'none';
+}
+
+// Zamknij modale po kliknięciu poza nimi
 window.onclick = function(event) {
-    const modal = document.getElementById('extendForm');
-    if (event.target === modal) {
+    const extendModal = document.getElementById('extendForm');
+    const cancelModal = document.getElementById('cancelReservationModal');
+    
+    if (event.target === extendModal) {
         hideExtendForm();
+    }
+    if (event.target === cancelModal) {
+        hideCancelModal();
     }
 }
 </script>
 
 <style>
-.penalties-section {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: #f8f9fa;
-    border-radius: 8px;
-}
+/* Istniejące style zachowane... */
+.penalties-section { margin: 2rem 0; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; }
+.penalties-section h3 { margin-bottom: 1.5rem; color: #2c3e50; }
+.penalty-summary { background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid #e0e0e0; }
+.info-card { background: #fff8e1; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid #ff9800; }
+.info-card h4 { margin-bottom: 0.5rem; color: #333; }
+.penalty-amount { font-size: 1.3rem; color: #e74c3c; font-weight: bold; margin: 0.5rem 0; }
+.penalty-warning { color: #e67e22; font-style: italic; margin: 0.5rem 0 0 0; }
+.penalties-list h4 { margin: 1.5rem 0 1rem 0; color: #333; }
+.no-penalties { text-align: center; padding: 2rem; color: #666; }
+.overdue-badge { display: inline-block; background: #e74c3c; color: white; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.7rem; font-weight: bold; margin-left: 0.5rem; }
+.status-badge { padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
+.status-badge.pending { background: #fff3cd; color: #856404; }
+.status-badge.paid { background: #d4edda; color: #155724; }
+.status-badge.cancelled { background: #e2e3e5; color: #383d41; }
+.status-badge.overdue { background: #f8d7da; color: #721c24; }
+.reservations-section, .active-rentals-section, .history-section { margin: 2rem 0; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; }
+.reservations-section h3, .active-rentals-section h3, .history-section h3 { margin-bottom: 1rem; color: #2c3e50; }
+.status-badge.confirmed { background: #d4edda; color: #155724; }
+.status-badge.active { background: #d1ecf1; color: #0c5460; }
+.status-badge.completed { background: #d4edda; color: #155724; }
 
-.penalties-section h3 {
-    margin-bottom: 1.5rem;
-    color: #2c3e50;
-}
+/* Style modala */
+.form-modal { position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; }
+.modal-content { background: white; padding: 2rem; border-radius: 8px; width: 90%; max-width: 400px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.form-buttons { display: flex; gap: 1rem; margin-top: 1rem; }
 
-.penalty-summary {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
-}
-
-.info-card {
-    background: #fff8e1;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    border-left: 4px solid #ff9800;
-}
-
-.info-card h4 {
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
-.penalty-amount {
-    font-size: 1.3rem;
-    color: #e74c3c;
-    font-weight: bold;
-    margin: 0.5rem 0;
-}
-
-.penalty-warning {
-    color: #e67e22;
-    font-style: italic;
-    margin: 0.5rem 0 0 0;
-}
-
-.penalties-list h4 {
-    margin: 1.5rem 0 1rem 0;
-    color: #333;
-}
-
-.no-penalties {
-    text-align: center;
-    padding: 2rem;
-    color: #666;
-}
-
-.overdue-badge {
-    display: inline-block;
-    background: #e74c3c;
-    color: white;
-    padding: 0.2rem 0.5rem;
-    border-radius: 3px;
-    font-size: 0.7rem;
-    font-weight: bold;
-    margin-left: 0.5rem;
-}
-
-.status-badge {
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.status-badge.pending {
-    background: #fff3cd;
-    color: #856404;
-}
-
-.status-badge.paid {
-    background: #d4edda;
-    color: #155724;
-}
-
-.status-badge.cancelled {
-    background: #e2e3e5;
-    color: #383d41;
-}
-
-.status-badge.overdue {
-    background: #f8d7da;
-    color: #721c24;
-}
-
-.reservations-section,
-.active-rentals-section,
-.history-section {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: #f8f9fa;
-    border-radius: 8px;
-}
-
-.reservations-section h3,
-.active-rentals-section h3,
-.history-section h3 {
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-.status-badge.confirmed {
-    background: #d4edda;
-    color: #155724;
-}
-
-.status-badge.active {
-    background: #d1ecf1;
-    color: #0c5460;
-}
-
-.status-badge.completed {
-    background: #d4edda;
-    color: #155724;
-}
-
-.form-modal {
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 400px;
-}
-
-.form-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.table-container {
-    overflow-x: auto;
-    margin: 1rem 0;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-th, td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #eee;
-}
-
-th {
-    background: #34495e;
-    color: white;
-    font-weight: bold;
-}
-
-tr:hover {
-    background: #f8f9fa;
-}
-
-small {
-    color: #666;
-    font-size: 0.8rem;
-}
-
-.btn-small {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-}
+.table-container { overflow-x: auto; margin: 1rem 0; }
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; }
+th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #eee; }
+th { background: #34495e; color: white; font-weight: bold; }
+tr:hover { background: #f8f9fa; }
+small { color: #666; font-size: 0.8rem; }
+.btn-small { padding: 0.5rem 1rem; font-size: 0.9rem; }
+.btn-danger { background-color: #e74c3c; color: white; border: none; cursor: pointer; }
+.btn-danger:hover { background-color: #c0392b; }
+.btn-success { background-color: #27ae60; color: white; border: none; }
+.btn-secondary { background-color: #95a5a6; color: white; border: none; }
 
 @media (max-width: 768px) {
-    .table-container {
-        font-size: 0.9rem;
-    }
-    
-    th, td {
-        padding: 0.75rem 0.5rem;
-    }
+    .table-container { font-size: 0.9rem; }
+    th, td { padding: 0.75rem 0.5rem; }
 }
 </style>
 
