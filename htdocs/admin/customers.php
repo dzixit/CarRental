@@ -26,15 +26,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_penalty'])) {
     }
     
     if ($customer_id) {
-        // ZMIANA: Usunięto customer_id z INSERT INTO (Naprawa błędu SQL)
         // Zakładamy, że tabela Penalty nie ma kolumny customer_id, skoro występował błąd
         $query = "INSERT INTO Penalty (amount, reason, imposition_date, payment_deadline, rental_id, penalty_status) 
                   VALUES (?, ?, CURDATE(), DATE_ADD(CURDATE(), INTERVAL 14 DAY), ?, 'pending')";
         $stmt = $db->prepare($query);
-        // ZMIANA: Usunięto $customer_id z parametrów execute
         if ($stmt->execute([$amount, $reason, $rental_id])) {
             
-            // ZMIANA: Wysyłanie maila o karze
+            // Wysyłanie maila o karze
             require_once __DIR__ . '/../includes/email_sender.php';
             $stmt_user = $db->prepare("SELECT email, first_name FROM Customer WHERE customer_id = ?");
             $stmt_user->execute([$customer_id]);
